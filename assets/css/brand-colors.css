@@ -1,0 +1,97 @@
+/* ============================================
+   PALETA CORPORATIVA - Dr. Francisco Javier Vega Pinkney
+   ============================================ */
+
+:root {
+    --color-primary: #f3e0c0;      /* fondo principal crema */
+    --color-secondary: #6f685a;    /* navbar, footer, fondos oscuros */
+    --color-accent: #b7a68b;       /* botones, enlaces activos, hover */
+    --color-dark: #0c1417;         /* texto principal sobre fondos claros */
+    --color-muted: #adaca7;        /* texto secundario, bordes suaves */
+    --text-on-dark: #f3e0c0;       /* texto claro sobre fondos oscuros */
+}
+
+/* ============================================
+   ESTILOS GENERALES
+   ============================================ */
+body {
+    background-color: var(--color-primary);
+    color: var(--color-dark);
+}
+
+/* ============================================
+   HEADER PRINCIPAL
+   ============================================ */
+/* Fondo del header completo */
+.main-header.header-style-one {
+    background-color: var(--color-secondary);
+}
+
+/* Barra superior (teléfono, email, redes) */
+.header-top {
+    background-color: var(--color-secondary);
+    color: var(--text-on-dark);
+}
+
+/* Enlaces de contacto en la barra superior */
+.header-contact-info a {
+    color: var(--text-on-dark);
+}
+
+/* Enlaces de redes sociales en la barra superior */
+.header-social-link a {
+    color: var(--text-on-dark);
+}
+
+/* ============================================
+   MENÚ DE NAVEGACIÓN
+   ============================================ */
+/* Enlaces del menú principal */
+.navigation li a {
+    color: var(--text-on-dark);
+}
+
+/* Hover en enlaces del menú */
+.navigation li a:hover {
+    color: var(--color-accent);
+}
+
+/* Enlace activo (página actual) */
+.navigation li.current a {
+    color: var(--color-accent);
+}
+
+/* ============================================
+   BOTÓN DE LLAMADA A LA ACCIÓN (CTA)
+   ============================================ */
+.btn-one {
+    background-color: var(--color-accent);
+    color: var(--color-dark);
+    border-color: var(--color-accent);
+}
+
+.btn-one:hover {
+    background-color: var(--color-secondary);
+    color: #fff;
+}
+
+/* ============================================
+   SLIDER PRINCIPAL
+   ============================================ */
+/* Fondo de la sección slider (por si las imágenes no cargan) */
+.main-slider.style1 {
+    background-color: var(--color-primary);
+}
+
+/* Textos dentro del slider */
+.main-slider .content h5,
+.main-slider .content h2 {
+    color: var(--color-dark);
+}
+
+/* ============================================
+   SECCIONES GENERALES (por si hay fondos oscuros heredados)
+   ============================================ */
+section {
+    background-color: transparent; /* respeta el body */
+}
