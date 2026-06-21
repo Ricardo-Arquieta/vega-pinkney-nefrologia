@@ -90,8 +90,32 @@ body {
 }
 
 /* ============================================
-   SECCIONES GENERALES (por si hay fondos oscuros heredados)
-   ============================================ */
+SECCIONES GENERALES (por si hay fondos oscuros heredados)
+============================================ */
 section {
     background-color: transparent; /* respeta el body */
+}
+
+/* ============================================
+AJUSTE DE ESPACIADO EN MENÚ DE ESCRITORIO
+Soluciona el desbordamiento por textos largos en español
+   ============================================ */
+
+/* Reduce el espacio entre elementos de la lista */
+.main-header .main-menu .navigation > li {
+    margin-right: 10px;
+}
+
+/* Reduce el padding interno y el tamaño de fuente de cada enlace */
+.main-header .main-menu .navigation > li > a {
+    padding-left: 8px;
+    padding-right: 8px;
+    font-size: 14px;
+}
+
+/* Reduce el padding del botón "Get Appointment" */
+.main-header .header-right .btn-one {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 16px;
 }
