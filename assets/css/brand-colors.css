@@ -271,3 +271,16 @@ Tonos caki de la paleta para que todos sean visibles
     background-color: #b7a68b !important;
     color: #0c1417 !important;
 }
+
+/* ============================================
+COLORES DE ICONOS EN FEATURED AREA
+   ============================================ */
+.featured-area .clr1 .fa {
+    color: #b7a68b; /* Beige acento */
+}
+.featured-area .clr2 .fa {
+    color: #6f685a; /* Gris topo */
+}
+.featured-area .clr3 .fa {
+    color: #0c1417; /* Negro azulado */
+}
