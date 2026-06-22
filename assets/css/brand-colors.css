@@ -470,3 +470,37 @@ BORDES REDONDEADOS EN CALENDARIO (IZQUIERDA)
     background-color: #b7a68b !important; /* Beige acento */
 }
 
+/* ============================================
+   CENTRADO VERTICAL EN CAJA DE AGENDA TU CONSULTA
+   ============================================ */
+.feautres-area .working-hours-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center !important; /* Centrado vertical */
+}
+
+.feautres-area .working-hours-box {
+    min-height: 550px; /* Ajuste según la altura de la caja derecha */
+}
+
+
+/* ============================================
+   CONTENEDOR DE IMAGEN + GLASSMORPHISM EN CALENDARIO
+   ============================================ */
+/* Asegura que la caja externa tenga altura y bordes redondeados */
+.feautres-area .image-bg-box {
+    min-height: 550px;
+    border-radius: 20px;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+}
+/* Glassmorphism en la caja de contenido */
+.feautres-area .image-bg-box .inner-content {
+    background: rgba(255, 255, 255, 0.75) !important; /* Fondo blanco translúcido */
+    backdrop-filter: blur(10px) !important;           /* Desenfoque */
+    -webkit-backdrop-filter: blur(10px) !important;   /* Soporte Safari */
+    border: 1px solid rgba(255, 255, 255, 0.5) !important;
+    border-radius: 16px;
+    padding: 30px;
+}
