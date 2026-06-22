@@ -321,25 +321,30 @@ COLOR DE CAJAS Y PALOMITAS EN ABOUT US
 }
 
 /* ============================================
-   SHAPES DECORATIVOS MÉDICOS (SECCIÓN SERVICIOS)
-   Reemplaza la huella y el hueso por formas abstractas
+SHAPES MÉDICOS CON ICONOS ANIMADOS
    ============================================ */
-.service-style1-area .shape-medical {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
+.service-style1-area .shape-icon {
     position: absolute;
-    opacity: 0.25;
+    opacity: 0.12;
     z-index: 0;
-    pointer-events: none; /* No interfiere con los clics */
+    pointer-events: none;
+    animation: shape-float 4s ease-in-out infinite;
 }
-.service-style1-area .shape1.shape-medical {
-    background: radial-gradient(circle at 30% 30%, #b7a68b, transparent 60%);
-    top: 40px;
-    left: 20px;
+
+.service-style1-area .shape1.shape-icon {
+    top: 30px;
+    left: 40px;
+    font-size: 160px; /* Más grande */
+    color: #b7a68b;
 }
-.service-style1-area .shape2.shape-medical {
-    background: radial-gradient(circle at 70% 70%, #6f685a, transparent 60%);
+.service-style1-area .shape2.shape-icon {
     bottom: 40px;
-    right: 20px;
+    right: 50px;
+    font-size: 130px; /* Un poco menor para variedad */
+    color: #6f685a;
+}
+
+@keyframes shape-float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-15px) rotate(5deg); }
 }
