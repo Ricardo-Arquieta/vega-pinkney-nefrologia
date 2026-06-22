@@ -348,3 +348,33 @@ SHAPES MÉDICOS CON ICONOS ANIMADOS
     0%, 100% { transform: translateY(0px) rotate(0deg); }
     50% { transform: translateY(-15px) rotate(5deg); }
 }
+
+/* ============================================
+ALTURA UNIFORME EN TARJETAS DE SERVICIOS
+   ============================================ */
+.service-style1-area .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+/* Las columnas se estiran al mismo alto */
+.service-style1-area .col-xl-3,
+.service-style1-area .col-lg-6,
+.service-style1-area .col-md-6 {
+    display: flex;
+}
+/* La tarjeta completa ocupa todo el alto de la columna */
+.service-style1-area .single-service-style1 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+/* El bloque de texto se expande para ocupar el espacio restante */
+.service-style1-area .single-service-style1 .text-holder {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+/* El botón se empuja hacia abajo automáticamente */
+.service-style1-area .single-service-style1 .text-holder .button {
+    margin-top: auto;
+}
