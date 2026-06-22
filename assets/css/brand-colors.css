@@ -559,3 +559,11 @@ SECCIÓN REVIEWS - ICONOS Y PUNTOS EN BEIGE
     position: relative;
     z-index: 2;
 }
+
+
+/* ============================================
+COLOR BEIGE PARA EL PADECIMIENTO EN TESTIMONIOS
+   ============================================ */
+.testimonial-style1-area .single-testimonial-style1 .text-holder span {
+    color: #b7a68b !important; /* Beige acento */
+}
