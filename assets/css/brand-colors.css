@@ -519,3 +519,20 @@ BORDES REDONDEADOS EN CALENDARIO (IZQUIERDA)
     border-radius: 16px;
     padding: 30px;
 }
+
+/* ============================================
+SECCIÓN REVIEWS - ICONOS Y PUNTOS EN BEIGE
+   ============================================ */
+.testimonial-style1-area .sec-title .icon .fa-star {
+    color: #b7a68b !important; /* Beige acento */
+}
+.testimonial-style1-area .sec-title h2 .round-box {
+    background-color: #b7a68b !important; /* Punto animado en beige */
+}
+/* Por si alguna imagen decorativa hereda fondo rosa */
+.testimonial-style1-area .image-box1,
+.testimonial-style1-area .image-box2,
+.testimonial-style1-area .image-box3,
+.testimonial-style1-area .image-box4 {
+    display: none; /* Ocultamos las imágenes de mascotas (ya no están en HTML, pero por si acaso) */
+}
