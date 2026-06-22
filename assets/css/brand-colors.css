@@ -497,10 +497,17 @@ BORDES REDONDEADOS EN CALENDARIO (IZQUIERDA)
 }
 /* Glassmorphism en la caja de contenido */
 .feautres-area .image-bg-box .inner-content {
-    background: rgba(255, 255, 255, 0.75) !important; /* Fondo blanco translúcido */
+    background: rgba(255, 255, 255, 0.555) !important; /* Fondo blanco translúcido */
     backdrop-filter: blur(10px) !important;           /* Desenfoque */
     -webkit-backdrop-filter: blur(10px) !important;   /* Soporte Safari */
     border: 1px solid rgba(255, 255, 255, 0.5) !important;
     border-radius: 16px;
     padding: 30px;
+}
+
+/* ============================================
+PUNTO ROSA DEL TÍTULO COFEPRIS EN BEIGE
+   ============================================ */
+.feautres-area .working-hours-box .title h3 span {
+    background-color: #b7a68b !important; /* Beige acento */
 }
