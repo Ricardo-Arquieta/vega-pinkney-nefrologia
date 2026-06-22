@@ -413,3 +413,11 @@ VIDEO GALLERY - FONDO GRIS TOPO Y SIN RESTOS ROSA
     background-color: #b7a68b !important; /* Beige acento al pasar el mouse */
     color: #ffffff !important;
 }
+
+/* ============================================
+SECCIÓN FEATURES / CONTACTO - COLOR DE ICONOS
+   ============================================ */
+.feautres-content-box .fa {
+    color: #b7a68b; /* Beige acento */
+    font-size: 24px;
+}
