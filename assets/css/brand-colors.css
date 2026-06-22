@@ -462,3 +462,11 @@ BORDES REDONDEADOS EN CALENDARIO (IZQUIERDA)
 .feautres-content-box .sec-title h5 {
     color: #b7a68b !important;
 }
+
+/* ============================================
+   PUNTO ANIMADO DEL TÍTULO CONTACTO EN BEIGE
+   ============================================ */
+.feautres-content-box .sec-title h2 .round-box {
+    background-color: #b7a68b !important; /* Beige acento */
+}
+
