@@ -536,3 +536,26 @@ SECCIÓN REVIEWS - ICONOS Y PUNTOS EN BEIGE
 .testimonial-style1-area .image-box4 {
     display: none; /* Ocultamos las imágenes de mascotas (ya no están en HTML, pero por si acaso) */
 }
+
+/* ============================================
+   VELO BEIGE SOBRE EL MAPA EN SECCIÓN REVIEWS
+   ============================================ */
+.testimonial-style1-area .layer-outer {
+    position: relative;
+}
+.testimonial-style1-area .layer-outer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(183, 166, 139, 0.45); /* Beige #b7a68b con opacidad */
+    z-index: 1;
+    pointer-events: none;
+}
+/* Asegura que el contenido esté sobre el velo */
+.testimonial-style1-area .layer-outer .container {
+    position: relative;
+    z-index: 2;
+}
