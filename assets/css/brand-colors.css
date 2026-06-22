@@ -421,3 +421,11 @@ SECCIÓN FEATURES / CONTACTO - COLOR DE ICONOS
     color: #b7a68b; /* Beige acento */
     font-size: 24px;
 }
+
+/* ============================================
+BORDES REDONDEADOS EN CALENDARIO (IZQUIERDA)
+   ============================================ */
+.feautres-area .working-hours-box {
+    border-radius: 20px;
+    overflow: hidden; /* Para que la imagen de fondo se recorte redonda */
+}
