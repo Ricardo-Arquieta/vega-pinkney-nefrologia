@@ -275,18 +275,14 @@ Tonos caki de la paleta para que todos sean visibles
 /* ============================================
 COLORES DE ICONOS EN FEATURED AREA
    ============================================ */
-.featured-area .clr1 .fa {
-    color: #b7a68b; /* Beige acento */
-}
-.featured-area .clr2 .fa {
-    color: #6f685a; /* Gris topo */
-}
+.featured-area .clr1 .fa,
+.featured-area .clr2 .fa,
 .featured-area .clr3 .fa {
-    color: #0c1417; /* Negro azulado */
+    color: #b7a68b; /* Unificamos al beige acento */
 }
 
 /* ============================================
-   TAMAÑO DE ICONOS Y ALTURA UNIFORME EN FEATURED AREA
+TAMAÑO DE ICONOS Y ALTURA UNIFORME EN FEATURED AREA
    ============================================ */
 
 /* Tamaño original de los íconos */
@@ -307,4 +303,12 @@ COLORES DE ICONOS EN FEATURED AREA
 }
 .featured-area .single-featured-box .text {
     flex: 1;
+}
+
+/* ============================================
+COLOR DE CAJAS Y PALOMITAS EN ABOUT US
+   ============================================ */
+.about-style1-content-box ul li .icon span::before {
+    background-color: #b7a68b !important; /* Fondo beige acento */
+    color: #ffffff !important;            /* Palomita blanca */
 }
