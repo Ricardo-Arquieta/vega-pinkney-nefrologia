@@ -378,3 +378,38 @@ ALTURA UNIFORME EN TARJETAS DE SERVICIOS
 .service-style1-area .single-service-style1 .text-holder .button {
     margin-top: auto;
 }
+
+/* ============================================
+VIDEO GALLERY - FONDO GRIS TOPO Y SIN RESTOS ROSA
+   ============================================ */
+.video-gallery-content-box {
+    background-color: #6f685a; /* Gris topo */
+}
+/* Anula cualquier fondo rosa en la sección y sus contenedores */
+.video-gallery-area,
+.video-gallery-area .container-fullwidth,
+.video-gallery-area .container-fullwidth .row,
+.video-gallery-area .col-xl-6 {
+    background-color: transparent !important;
+}
+
+/* Botón "Agendar Cita" en Video Gallery */
+.video-gallery-content-box .btn-one {
+    background-color: #f3e0c0 !important; /* Crema */
+    color: #6f685a !important;           /* Negro */
+    position: relative;
+    overflow: hidden;
+}
+/* Elimina cualquier pseudo-elemento heredado que cause gradientes */
+.video-gallery-content-box .btn-one::before,
+.video-gallery-content-box .btn-one::after {
+    background: none !important;
+    opacity: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+}
+/* Hover limpio y controlado */
+.video-gallery-content-box .btn-one:hover {
+    background-color: #b7a68b !important; /* Beige acento al pasar el mouse */
+    color: #ffffff !important;
+}
