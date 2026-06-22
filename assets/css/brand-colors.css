@@ -415,11 +415,10 @@ VIDEO GALLERY - FONDO GRIS TOPO Y SIN RESTOS ROSA
 }
 
 /* ============================================
-SECCIÓN FEATURES / CONTACTO - COLOR DE ICONOS
+   SECCIÓN CONTACTO - COLOR BEIGE EN ICONOS
    ============================================ */
-.feautres-content-box .fa {
-    color: #b7a68b; /* Beige acento */
-    font-size: 24px;
+.feautres-content-box .icon span::before {
+    color: #b7a68b !important; /* Beige acento */
 }
 
 /* ============================================
@@ -428,4 +427,38 @@ BORDES REDONDEADOS EN CALENDARIO (IZQUIERDA)
 .feautres-area .working-hours-box {
     border-radius: 20px;
     overflow: hidden; /* Para que la imagen de fondo se recorte redonda */
+}
+
+/* ============================================
+   BOTÓN "AGENDAR CITA" EN SECCIÓN CALENDARIO
+   ============================================ */
+#calendario .working-hours-box .btn-one {
+    background-color: #b7a68b !important; /* Beige acento en estado normal */
+    color: #6f685a !important;           /* Texto oscuro */
+    position: relative;
+    overflow: hidden;
+}
+/* Elimina cualquier pseudo-elemento heredado que cause gradientes o verdes */
+#calendario .working-hours-box .btn-one::before,
+#calendario .working-hours-box .btn-one::after {
+    background: none !important;
+    opacity: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+}
+/* Hover en gris topo */
+#calendario .working-hours-box .btn-one:hover {
+    background-color: #6f685a !important; /* Gris topo */
+    color: #ffffff !important;           /* Texto blanco */
+}
+
+/* ============================================
+   COLOR DEL TEXTO "//CONTACTO//" EN BEIGE
+   ============================================ */
+.feautres-content-box .sec-title h5 span {
+    color: #b7a68b !important; /* Beige acento */
+}
+
+.feautres-content-box .sec-title h5 {
+    color: #b7a68b !important;
 }
