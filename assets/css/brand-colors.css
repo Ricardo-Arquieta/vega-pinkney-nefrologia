@@ -217,3 +217,57 @@ Tonos caki de la paleta para que todos sean visibles
 .main-header .hidden-content-button .nav-toggler ul li.red2 {
     background-color: #b7a68b; /* Beige arena */
 }
+
+/* ============================================
+   BARRA LATERAL OCULTA (HIDDEN BAR)
+   Efecto Glassmorphism: fondo negro transparente con blur
+   ============================================ */
+
+.hidden-bar {
+    background-color: rgba(12, 20, 23, 0.88) !important; /* #0c1417 con opacidad */
+    backdrop-filter: blur(14px) !important;              /* Efecto vidrio esmerilado */
+    -webkit-backdrop-filter: blur(14px) !important;      /* Soporte Safari */
+    border-left: 1px solid rgba(183, 166, 139, 0.3);    /* Borde sutil beige */
+}
+
+/* Botón de cierre (X) */
+.hidden-bar .hidden-bar-closer button {
+    color: #ffffff !important;
+}
+
+/* Todos los textos: blanco puro */
+.hidden-bar .logo,
+.hidden-bar h3,
+.hidden-bar .text p,
+.hidden-bar .contact-info-box ul li h5,
+.hidden-bar .contact-info-box ul li p,
+.hidden-bar .contact-info-box a,
+.hidden-bar .newsletter-form-box h3,
+.hidden-bar .copy-right-text p {
+    color: #ffffff !important;
+}
+
+/* Enlaces y hover */
+.hidden-bar a {
+    color: #ffffff !important;
+    transition: color 0.3s ease;
+}
+.hidden-bar a:hover {
+    color: #b7a68b !important; /* Acento beige al pasar el mouse */
+}
+
+/* Campo de email del newsletter */
+.hidden-bar .newsletter-form-box input[type="email"] {
+    background-color: rgba(255, 255, 255, 0.15) !important;
+    color: #ffffff !important;
+    border: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+.hidden-bar .newsletter-form-box input[type="email"]::placeholder {
+    color: rgba(255, 255, 255, 0.6) !important;
+}
+
+/* Botón del newsletter */
+.hidden-bar .newsletter-form-box button {
+    background-color: #b7a68b !important;
+    color: #0c1417 !important;
+}
