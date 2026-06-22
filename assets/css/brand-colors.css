@@ -485,29 +485,37 @@ BORDES REDONDEADOS EN CALENDARIO (IZQUIERDA)
 
 
 /* ============================================
-   CONTENEDOR DE IMAGEN + GLASSMORPHISM EN CALENDARIO
+   CONTENEDOR DE IMAGEN + VELO + GLASSMORPHISM EN CALENDARIO
    ============================================ */
-/* Asegura que la caja externa tenga altura y bordes redondeados */
+/* Asegura que la caja externa tenga altura, bordes redondeados y posición relativa */
 .feautres-area .image-bg-box {
+    position: relative;
     min-height: 550px;
     border-radius: 20px;
     overflow: hidden;
     background-size: cover;
     background-position: center;
 }
-/* Glassmorphism en la caja de contenido */
+/* Velo translúcido entre la imagen y el texto */
+.feautres-area .image-bg-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(111, 104, 90, 0.45); /* Negro azulado con opacidad */
+    z-index: 1;
+    pointer-events: none; /* Permite clics en el contenido debajo */
+}
+/* Glassmorphism en la caja de contenido, por encima del velo */
 .feautres-area .image-bg-box .inner-content {
-    background: rgba(255, 255, 255, 0.555) !important; /* Fondo blanco translúcido */
-    backdrop-filter: blur(10px) !important;           /* Desenfoque */
-    -webkit-backdrop-filter: blur(10px) !important;   /* Soporte Safari */
+    position: relative;
+    z-index: 2; /* Para que esté sobre el velo */
+    background: rgba(255, 255, 255, 0.75) !important;
+    backdrop-filter: blur(10px) !important;
+    -webkit-backdrop-filter: blur(10px) !important;
     border: 1px solid rgba(255, 255, 255, 0.5) !important;
     border-radius: 16px;
     padding: 30px;
-}
-
-/* ============================================
-PUNTO ROSA DEL TÍTULO COFEPRIS EN BEIGE
-   ============================================ */
-.feautres-area .working-hours-box .title h3 span {
-    background-color: #b7a68b !important; /* Beige acento */
 }
