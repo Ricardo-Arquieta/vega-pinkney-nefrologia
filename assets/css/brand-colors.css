@@ -33,14 +33,34 @@ body {
     color: var(--text-on-dark);
 }
 
-/* Enlaces de contacto en la barra superior */
-.header-contact-info a {
-    color: var(--text-on-dark);
+/* ============================================
+   BARRA SUPERIOR - TEXTOS E ÍCONOS EN BLANCO
+   ============================================ */
+
+/* Correo electrónico (texto del enlace) */
+.header-contact-info ul li a[href^="mailto"] {
+    color: #ffffff !important;
 }
 
-/* Enlaces de redes sociales en la barra superior */
-.header-social-link a {
-    color: var(--text-on-dark);
+/* Teléfono (texto del enlace) */
+.header-contact-info ul li a[href^="tel"] {
+    color: #ffffff !important;
+}
+
+/* Ícono del sobre (correo) */
+.header-contact-info .icon-envelope::before {
+    color: #ffffff !important;
+}
+
+/* Ícono del teléfono */
+.header-contact-info .icon-phone-call::before {
+    color: #ffffff !important;
+}
+
+/* Redes sociales - enlaces e íconos */
+.header-social-link a,
+.header-social-link a i {
+    color: #ffffff !important;
 }
 
 /* ============================================
