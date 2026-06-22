@@ -284,3 +284,27 @@ COLORES DE ICONOS EN FEATURED AREA
 .featured-area .clr3 .fa {
     color: #0c1417; /* Negro azulado */
 }
+
+/* ============================================
+   TAMAÑO DE ICONOS Y ALTURA UNIFORME EN FEATURED AREA
+   ============================================ */
+
+/* Tamaño original de los íconos */
+.featured-area .icon span {
+    font-size: 60px; /* Ajuste este valor según el original */
+}
+
+/* Altura uniforme en las tarjetas */
+.featured-area .row {
+    display: flex;
+    flex-wrap: wrap;
+}
+.featured-area .single-featured-box {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    min-height: 220px; /* Altura mínima para uniformidad */
+}
+.featured-area .single-featured-box .text {
+    flex: 1;
+}
