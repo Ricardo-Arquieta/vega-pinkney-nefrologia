@@ -182,3 +182,18 @@ Reemplaza el GIF original por spinner corporativo
         transform: rotate(360deg);
     }
 }
+
+/* ============================================
+BOTÓN DE 9 PUNTOS (SIDE-NAV TOGGLER)
+Tonos caki de la paleta para que todos sean visibles
+   ============================================ */
+
+/* Todos los cuadritos: crema claro para que contrasten con el header */
+.main-header .hidden-content-button .nav-toggler ul li {
+    background-color: #6f685a; /* Crema */
+}
+
+/* Cuadritos destacados: beige arena, el tono más caki */
+.main-header .hidden-content-button .nav-toggler ul li.red2 {
+    background-color: #b7a68b; /* Beige arena */
+}
