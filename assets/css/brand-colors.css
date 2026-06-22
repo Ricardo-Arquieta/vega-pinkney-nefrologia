@@ -119,3 +119,66 @@ Soluciona el desbordamiento por textos largos en español
     padding-right: 20px;
     font-size: 16px;
 }
+
+/* ============================================
+PRELOADER - ANIMACIÓN CSS DOBLE ANILLO
+Reemplaza el GIF original por spinner corporativo
+   ============================================ */
+
+/* Fondo oscuro y eliminamos el GIF */
+.preloader {
+    background-color: var(--color-dark); /* #0c1417 */
+    background-image: none !important;   /* Anula cualquier GIF heredado */
+}
+
+/* Anillo exterior (gris topo, giro horario) */
+.preloader::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60px;
+    height: 60px;
+    margin-top: -30px;                  /* Centrado vertical */
+    margin-left: -30px;                 /* Centrado horizontal */
+    border: 4px solid transparent;
+    border-top-color: var(--color-secondary); /* #6f685a */
+    border-right-color: var(--color-secondary);
+    border-radius: 50%;
+    animation: preloader-spin-outer 1s linear infinite;
+}
+
+/* Anillo interior (beige, giro antihorario, más rápido) */
+.preloader::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 36px;
+    height: 36px;
+    margin-top: -18px;
+    margin-left: -18px;
+    border: 4px solid transparent;
+    border-bottom-color: var(--color-accent); /* #b7a68b */
+    border-left-color: var(--color-accent);
+    border-radius: 50%;
+    animation: preloader-spin-inner 0.6s linear infinite reverse;
+}
+
+/* Opcional: sutil halo central con crema */
+.preloader::before {
+    box-shadow: 0 0 12px rgba(243, 224, 192, 0.3); /* #f3e0c0 con opacidad */
+}
+
+/* Animaciones de giro */
+@keyframes preloader-spin-outer {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes preloader-spin-inner {
+    to {
+        transform: rotate(360deg);
+    }
+}
