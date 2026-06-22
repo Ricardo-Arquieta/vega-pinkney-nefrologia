@@ -312,3 +312,34 @@ COLOR DE CAJAS Y PALOMITAS EN ABOUT US
     background-color: #b7a68b !important; /* Fondo beige acento */
     color: #ffffff !important;            /* Palomita blanca */
 }
+
+/* ============================================
+   COLOR DEL ICONO EN SECCIÓN SERVICIOS
+   ============================================ */
+.service-style1-area .sec-title .icon .fa-heartbeat {
+    color: #b7a68b; /* Beige acento */
+}
+
+/* ============================================
+   SHAPES DECORATIVOS MÉDICOS (SECCIÓN SERVICIOS)
+   Reemplaza la huella y el hueso por formas abstractas
+   ============================================ */
+.service-style1-area .shape-medical {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    position: absolute;
+    opacity: 0.25;
+    z-index: 0;
+    pointer-events: none; /* No interfiere con los clics */
+}
+.service-style1-area .shape1.shape-medical {
+    background: radial-gradient(circle at 30% 30%, #b7a68b, transparent 60%);
+    top: 40px;
+    left: 20px;
+}
+.service-style1-area .shape2.shape-medical {
+    background: radial-gradient(circle at 70% 70%, #6f685a, transparent 60%);
+    bottom: 40px;
+    right: 20px;
+}
