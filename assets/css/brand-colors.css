@@ -639,3 +639,123 @@ SECCIÓN BLOG - COLORES ROSA A BEIGE
 .blog-style1-area .owl-next:hover::before {
     color: #ffffff !important;
 }
+
+/* ============================================
+   FOOTER - VELO CORPORATIVO Y COLORES UNIFICADOS
+   ============================================ */
+.footer-area {
+    position: relative;
+    overflow: hidden;
+    background-color: #ffffff !important; /* Fondo blanco detrás de la figura */
+}
+/* Eliminamos el velo semitransparente para que no oscurezca el fondo */
+.footer-area::before {
+    display: none !important;
+}
+/* Todo el contenido del footer por encima del fondo */
+.footer-area .footer {
+    position: relative;
+    z-index: 2;
+    background-color: transparent !important;
+}
+
+/* Textos en blanco crema (conservados de su versión original) */
+.footer-area,
+.footer-area .title h3,
+.footer-area .title h3 a,
+.footer-area .title span,
+.footer-area .copy-right p,
+.footer-area .copy-right h4,
+.footer-area .footer-menu ul li a {
+    color: #ffffff !important;
+}
+.footer-area .footer-menu ul li a:hover {
+    color: #b7a68b !important;
+}
+
+/* Iconos de contacto en beige */
+.footer-contact-info .icon .fa {
+    color: #b7a68b !important;
+    font-size: 24px;
+}
+
+/* Redes sociales: fondo beige, icono oscuro */
+.footer-social-info a {
+    background-color: #b7a68b !important;
+    color: #ffffff !important;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.footer-social-info a:hover {
+    background-color: #6f685a !important;
+    color: #ffffff !important;
+}
+
+/* Línea de copyright más sutil */
+.footer-logo .copy-right p {
+    opacity: 0.7;
+}
+
+/* Anulación de cualquier color rosa, verde o azul remanente en fondos o bordes */
+.footer-area * {
+    background-color: transparent !important;
+}
+/* Excepciones para los que sí deben tener fondo */
+.footer-social-info a,
+.footer-social-info a:hover {
+    background-color: #b7a68b !important;
+}
+.footer-social-info a:hover {
+    background-color: #6f685a !important;
+}
+
+/* Bordes divisorios en beige (elimina líneas azules) */
+.footer-area .footer-contact-info .single-box,
+.footer-area .footer-menu,
+.footer-area .footer-contact-info,
+.footer-area .footer-social-info,
+.footer-area .single-box,
+.footer-area .footer-menu ul,
+.footer-area .footer-menu ul li {
+    border-color: #b7a68b !important;
+}
+
+/* Elimina la línea vertical azul en logo/copyright */
+.footer-logo,
+.footer-logo .logo,
+.footer-logo .copy-right,
+.footer-logo::before,
+.footer-logo::after {
+    border-color: #b7a68b !important;
+}
+
+.footer-area .footer-bg {
+    filter: grayscale(100%) sepia(25%) brightness(1.4) contrast(0.9) saturate(0.7);
+}
+
+/* ============================================
+   BOTÓN "SUBIR" (SCROLL-TO-TOP) EN COLORES CORPORATIVOS
+   ============================================ */
+.scroll-to-top,
+.scroll-top,
+#scroll-top,
+.scrollup {
+    background-color: #b7a68b !important; /* Beige acento */
+    color: #ffffff !important;            /* Flecha blanca */
+    border-color: #b7a68b !important;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+.scroll-to-top:hover,
+.scroll-top:hover,
+#scroll-top:hover,
+.scrollup:hover {
+    background-color: #6f685a !important; /* Gris topo en hover */
+    color: #ffffff !important;
+}
+/* Si la flecha se genera con ::before */
+.scroll-to-top::before,
+.scroll-top::before,
+#scroll-top::before,
+.scrollup::before {
+    color: #ffffff !important;
+}
