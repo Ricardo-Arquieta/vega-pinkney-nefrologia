@@ -617,3 +617,25 @@ SECCIÓN BLOG - COLORES ROSA A BEIGE
 .blog-style1-area .meta-info a:hover {
     color: #6f685a !important; /* Sin cambio */
 }
+
+/* Botones del carrusel en beige */
+.blog-style1-area .owl-prev,
+.blog-style1-area .owl-next {
+    background-color: #b7a68b !important; /* Beige acento */
+    color: #ffffff !important;
+    border-color: #b7a68b !important;
+}
+.blog-style1-area .owl-prev::before,
+.blog-style1-area .owl-next::before {
+    color: #ffffff !important; /* Flecha blanca */
+}
+.blog-style1-area .owl-prev:hover,
+.blog-style1-area .owl-next:hover {
+    background-color: #6f685a !important; /* Gris topo en hover */
+    color: #ffffff !important;
+    border-color: #6f685a !important;
+}
+.blog-style1-area .owl-prev:hover::before,
+.blog-style1-area .owl-next:hover::before {
+    color: #ffffff !important;
+}
