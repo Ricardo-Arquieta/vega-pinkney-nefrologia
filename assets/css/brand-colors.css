@@ -599,3 +599,21 @@ SECCIÓN BLOG - COLORES ROSA A BEIGE
 .blog-style1-area .single-blog-style1 .inner::before {
     background-color: rgba(183, 166, 139, 0.85) !important; /* Beige acento con opacidad */
 }
+
+/* Títulos de blog sin hover rosa */
+.blog-style1-area .blog-title a {
+    color: #0c1417 !important; /* Negro azulado fijo */
+    transition: none !important; /* Sin animación */
+}
+.blog-style1-area .blog-title a:hover {
+    color: #0c1417 !important; /* Se mantiene igual al pasar el mouse */
+}
+
+/* Meta-info sin hover rosa */
+.blog-style1-area .meta-info a {
+    color: #6f685a !important; /* Gris topo fijo */
+    transition: none !important;
+}
+.blog-style1-area .meta-info a:hover {
+    color: #6f685a !important; /* Sin cambio */
+}
