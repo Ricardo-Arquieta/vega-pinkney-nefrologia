@@ -567,3 +567,35 @@ COLOR BEIGE PARA EL PADECIMIENTO EN TESTIMONIOS
 .testimonial-style1-area .single-testimonial-style1 .text-holder span {
     color: #b7a68b !important; /* Beige acento */
 }
+
+/* ============================================
+SECCIÓN BLOG - COLORES ROSA A BEIGE
+   ============================================ */
+.blog-style1-area .sec-title h5 span {
+    color: #b7a68b !important; /* Beige acento para "Artículos" */
+}
+.blog-style1-area .sec-title h2 .round-box,
+.blog-style1-area .blog-title .round-box {
+    background-color: #b7a68b !important; /* Puntos animados en beige */
+}
+.blog-style1-area .meta-info .icon-user::before,
+.blog-style1-area .meta-info .icon-tag::before {
+    color: #b7a68b !important; /* Iconos de usuario y etiqueta en beige */
+}
+.blog-style1-area .meta-info a {
+    color: #6f685a !important; /* Enlaces en gris topo */
+}
+.blog-style1-area .meta-info a:hover {
+    color: #b7a68b !important;
+}
+
+.blog-style1-area .sec-title h5 {
+    color: #b7a68b !important; /* Beige acento para las barras y el texto */
+}
+
+/* Overlay rosa en hover de las tarjetas del blog → beige */
+.blog-style1-area .single-blog-style1::before,
+.blog-style1-area .single-blog-style1 .img-holder::after,
+.blog-style1-area .single-blog-style1 .inner::before {
+    background-color: rgba(183, 166, 139, 0.85) !important; /* Beige acento con opacidad */
+}
