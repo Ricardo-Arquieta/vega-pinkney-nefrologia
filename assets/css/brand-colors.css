@@ -818,3 +818,8 @@ BOTÓN "GET APPOINTMENT" – TEXTO BLANCO Y HOVER BEIGE
     color: #6f685a !important;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+/* Desplazamiento suave para todas las anclas internas */
+html {
+    scroll-behavior: smooth;
+}
