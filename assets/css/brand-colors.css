@@ -64,21 +64,21 @@ body {
 }
 
 /* ============================================
-   MENÚ DE NAVEGACIÓN
+   RESTAURACIÓN DEL HEADER Y COLORES DEL MENÚ
    ============================================ */
-/* Enlaces del menú principal */
-.navigation li a {
-    color: var(--text-on-dark);
+/* Fondo oscuro del header (para que el logo blanco se vea) */
+.main-header.header-style-one {
+    background-color: #6f685a !important; /* Gris topo */
 }
-
-/* Hover en enlaces del menú */
-.navigation li a:hover {
-    color: var(--color-accent);
+/* Enlaces del menú: blanco fijo, hover beige */
+.main-header .main-menu .navigation > li > a {
+    color: #b7a68b !important;
 }
-
-/* Enlace activo (página actual) */
-.navigation li.current a {
-    color: var(--color-accent);
+.main-header .main-menu .navigation > li > a:hover {
+    color: #6f685a !important; /* Beige acento */
+}
+.main-header .main-menu .navigation > li.current > a {
+    color: #b7a68b !important; /* Página activa en beige */
 }
 
 /* ============================================
@@ -219,8 +219,8 @@ Tonos caki de la paleta para que todos sean visibles
 }
 
 /* ============================================
-   BARRA LATERAL OCULTA (HIDDEN BAR)
-   Efecto Glassmorphism: fondo negro transparente con blur
+BARRA LATERAL OCULTA (HIDDEN BAR)
+Efecto Glassmorphism: fondo negro transparente con blur
    ============================================ */
 
 .hidden-bar {
