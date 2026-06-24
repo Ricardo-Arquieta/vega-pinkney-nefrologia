@@ -770,3 +770,32 @@ SECCIÓN BLOG - COLORES ROSA A BEIGE
 .mobile-nav-toggler .icon-bar {
     background-color: #ffffff !important;
 }
+
+/* ============================================
+   CORRECCIONES FINALES DEL MENÚ DE ESCRITORIO
+   ============================================ */
+
+/* Enlaces del submenú: color beige fijo */
+.main-menu .navigation .dropdown ul li a {
+    color: #b7a68b !important;
+}
+
+/* Hover del enlace (texto) sin rosa */
+.main-menu .navigation .dropdown ul li a:hover {
+    color: #b7a68b !important;
+}
+
+/* Rectángulo vertical rosa → beige */
+.main-menu .navigation .dropdown ul li a::before,
+.main-menu .navigation .dropdown ul li a::after {
+    background-color: #b7a68b !important;
+    /* Si desea eliminarlo por completo, descomente la siguiente línea:
+    content: none !important;
+    */
+}
+
+/* Botón 'Get Appointment': hover con fondo beige y texto oscuro */
+.header-right .btn-one:hover {
+    background-color: #b7a68b !important;
+    color: #6f685a !important;
+}
