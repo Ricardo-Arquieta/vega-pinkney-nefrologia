@@ -795,11 +795,12 @@ SECCIÓN BLOG - COLORES ROSA A BEIGE
 }
 
 /* ============================================
-BOTÓN "GET APPOINTMENT" – HOVER BEIGE SIN VERDE
+BOTÓN "GET APPOINTMENT" – TEXTO BLANCO Y HOVER BEIGE
    ============================================ */
 .header-right .btn-one {
     position: relative;
     overflow: hidden;
+    color: #ffffff !important; /* Texto blanco fijo */
 }
 /* Anula ambos pseudo-elementos */
 .header-right .btn-one::before,
@@ -813,7 +814,7 @@ BOTÓN "GET APPOINTMENT" – HOVER BEIGE SIN VERDE
 }
 /* Hover controlado con fondo beige */
 .header-right .btn-one:hover {
-    background-color: #6f685a !important;
-    color: #ffffff !important;
+    background-color: #b7a68b !important;
+    color: #6f685a !important;
     transition: background-color 0.3s ease, color 0.3s ease;
 }
