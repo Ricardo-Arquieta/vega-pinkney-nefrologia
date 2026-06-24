@@ -759,3 +759,14 @@ SECCIÓN BLOG - COLORES ROSA A BEIGE
 .scrollup::before {
     color: #ffffff !important;
 }
+
+/* ============================================
+   MENÚ HAMBURGUESA MÓVIL – FONDO BEIGE, BARRAS BLANCAS
+   ============================================ */
+.mobile-nav-toggler .inner {
+    background-color: #b7a68b !important; /* Beige acento */
+}
+/* Aseguramos que las barras sigan blancas */
+.mobile-nav-toggler .icon-bar {
+    background-color: #ffffff !important;
+}
