@@ -823,3 +823,26 @@ BOTÓN "GET APPOINTMENT" – TEXTO BLANCO Y HOVER BEIGE
 html {
     scroll-behavior: smooth;
 }
+
+/* ============================================
+STICKY HEADER – ESPACIADO Y SEPARACIÓN
+   ============================================ */
+
+/* Aumenta el espacio entre el logo y el menú */
+.sticky-header .logo {
+    padding-right: 40px; /* Separa el logo del menú */
+}
+/* Alternativa: si lo anterior mueve el menú, use esto en su lugar:
+.sticky-header .right-col {
+    padding-left: 40px;
+}
+*/
+
+/* Separa los elementos del menú entre sí */
+.sticky-header .main-menu .navigation > li {
+    margin-right: 25px; /* Más espacio entre palabras */
+}
+/* Quita el margen del último elemento para que no sobre espacio */
+.sticky-header .main-menu .navigation > li:last-child {
+    margin-right: 0;
+}
