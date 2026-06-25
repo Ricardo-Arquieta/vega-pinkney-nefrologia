@@ -875,3 +875,46 @@ HERO VIDEO ICON – ONDAS BEIGE EN LUGAR DE AZUL
 .main-slider .owl-next::before {
     color: #ffffff !important;
 }
+
+/* ============================================
+   BOTONES DEL HERO (MAKE APPOINTMENT Y TELÉFONO)
+   ============================================ */
+
+/* Botón principal "Make Appointment" */
+.main-slider .btn-one {
+    background-color: #b7a68b !important; /* Beige acento */
+    color: #0c1417 !important;           /* Texto oscuro */
+    border-color: #b7a68b !important;
+}
+.main-slider .btn-one:hover {
+    background-color: #6f685a !important; /* Gris topo en hover */
+    color: #ffffff !important;
+}
+
+/* Botón secundario "Teléfono" */
+.main-slider .btn-one.marleft.style2 {
+    background-color: transparent !important;
+    color: #ffffff !important;            /* Texto blanco */
+    border: 2px solid #b7a68b !important; /* Borde beige */
+}
+.main-slider .btn-one.marleft.style2:hover {
+    background-color: #b7a68b !important; /* Fondo beige en hover */
+    color: #0c1417 !important;           /* Texto oscuro */
+}
+
+/* Anula pseudo-elementos que causan barridos verdes/azules */
+.main-slider .btn-one::before,
+.main-slider .btn-one::after {
+    background: none !important;
+    opacity: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+}
+
+/* ============================================
+   ESQUINAS REDONDEADAS EN FEATURED AREA
+   ============================================ */
+.featured-area .single-featured-box {
+    border-radius: 16px;
+    overflow: hidden; /* Para que el contenido interno respete el redondeo */
+}
