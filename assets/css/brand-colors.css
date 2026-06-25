@@ -918,3 +918,16 @@ HERO VIDEO ICON – ONDAS BEIGE EN LUGAR DE AZUL
     border-radius: 16px;
     overflow: hidden; /* Para que el contenido interno respete el redondeo */
 }
+
+/* ============================================
+   FEATURED AREA – ESQUINAS REDONDEADAS Y HOVER ANIMADO
+   ============================================ */
+.featured-area .single-featured-box {
+    border-radius: 16px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Suavizado */
+}
+.featured-area .single-featured-box:hover {
+    transform: scale(1.04); /* Crece un 4% */
+    box-shadow: 0 8px 24px rgba(12, 20, 23, 0.12); /* Sombra sutil */
+}
