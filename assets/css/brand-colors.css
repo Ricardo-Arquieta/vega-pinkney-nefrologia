@@ -846,3 +846,32 @@ STICKY HEADER – ESPACIADO Y SEPARACIÓN
 .sticky-header .main-menu .navigation > li:last-child {
     margin-right: 0;
 }
+
+/* ============================================
+HERO VIDEO ICON – ONDAS BEIGE EN LUGAR DE AZUL
+   ============================================ */
+.video-holder-box:hover .icon:before,
+.main-slider.style2:hover .video-holder-box-style2 .icon:before {
+    -webkit-box-shadow: 0 0 0 0 rgba(183, 166, 139, 0.25) !important;
+    box-shadow: 0 0 0 0 rgba(183, 166, 139, 0.25) !important;
+}
+
+/* ============================================
+   FLECHAS DEL CARRUSEL HERO – COLORES CORPORATIVOS
+   ============================================ */
+.main-slider .owl-prev,
+.main-slider .owl-next {
+    background-color: #b7a68b !important; /* Beige acento */
+    color: #ffffff !important;            /* Flecha blanca */
+    border-color: #b7a68b !important;
+}
+.main-slider .owl-prev:hover,
+.main-slider .owl-next:hover {
+    background-color: #6f685a !important; /* Gris topo en hover */
+    color: #ffffff !important;
+}
+/* Por si la flecha se genera con ::before */
+.main-slider .owl-prev::before,
+.main-slider .owl-next::before {
+    color: #ffffff !important;
+}
