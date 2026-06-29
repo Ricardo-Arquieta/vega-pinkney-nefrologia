@@ -931,3 +931,27 @@ HERO VIDEO ICON – ONDAS BEIGE EN LUGAR DE AZUL
     transform: scale(1.04); /* Crece un 4% */
     box-shadow: 0 8px 24px rgba(12, 20, 23, 0.12); /* Sombra sutil */
 }
+
+/* ============================================
+   PUNTO DECORATIVO DEL TÍTULO EN EL HERO
+   ============================================ */
+.main-slider .content h2 .round {
+    background-color: #393d72 !important; /* Beige acento */
+}
+
+/* ============================================
+   ABOUT US – TÍTULOS Y PUNTO ANIMADO EN BEIGE
+   ============================================ */
+.about-style1-area .sec-title h5 {
+    color: #b7a68b !important; /* "//Sobre mí//" en beige */
+}
+.about-style1-area .sec-title h2 .round-box {
+    background-color: #b7a68b !important; /* Punto parpadeante en beige */
+}
+
+/* ============================================
+   SERVICIOS – PUNTO ANIMADO EN BEIGE
+   ============================================ */
+.service-style1-area .sec-title h2 .round-box {
+    background-color: #b7a68b !important; /* Beige acento */
+}
