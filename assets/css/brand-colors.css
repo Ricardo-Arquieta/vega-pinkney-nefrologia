@@ -966,6 +966,10 @@ HERO VIDEO ICON – ONDAS BEIGE EN LUGAR DE AZUL
 .bar-box.style2 ul li.red2 {
     background-color: #b7a68b !important; /* Beige */
 }
+/* Enlaces del menú de navegación en blanco */
+.main-menu.style2 .navigation > li > a {
+    color: #ffffff !important;
+}
 /* Hover de los enlaces del menú */
 .main-menu.style2 .navigation > li > a:hover,
 .main-menu.style2 .navigation > li.current > a {
