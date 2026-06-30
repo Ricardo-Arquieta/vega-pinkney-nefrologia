@@ -955,3 +955,117 @@ HERO VIDEO ICON – ONDAS BEIGE EN LUGAR DE AZUL
 .service-style1-area .sec-title h2 .round-box {
     background-color: #b7a68b !important; /* Beige acento */
 }
+
+/* ============================================
+   BLOG-V2.HTML - SOBRESCRITURA DE COLORES - PAGINA ESPECIAL PARA BLOG V2
+   ============================================ */
+
+/* ---- HEADER STYLE TWO ---- */
+/* Puntos del toggler (9 cuadritos) */
+.bar-box.style2 ul li,
+.bar-box.style2 ul li.red2 {
+    background-color: #b7a68b !important; /* Beige */
+}
+/* Hover de los enlaces del menú */
+.main-menu.style2 .navigation > li > a:hover,
+.main-menu.style2 .navigation > li.current > a {
+    color: #b7a68b !important;
+}
+/* Botón Get Appointment */
+.btn-one.style2 {
+    background-color: #b7a68b !important;
+    color: #0c1417 !important;
+}
+.btn-one.style2:hover {
+    background-color: #6f685a !important;
+    color: #ffffff !important;
+}
+
+/* ---- BREADCRUMB ---- */
+/* Punto animado */
+.breadcrumb-area .title h2 .dotted {
+    background-color: #b7a68b !important;
+}
+
+/* ---- BLOG GRID ---- */
+/* Fecha y overlay hover */
+.single-blog-style1 .img-holder .date-box,
+.single-blog-style1 .img-holder .inner:before {
+    background-color: #b7a68b !important;
+}
+/* Meta-info (autor, categorías) y sus iconos */
+.single-blog-style1 .text-holder .meta-info li a:hover,
+.single-blog-style1 .text-holder .meta-info li span:before {
+    color: #b7a68b !important;
+}
+/* Título y punto animado */
+.single-blog-style1 .text-holder .blog-title a:hover {
+    color: #b7a68b !important;
+}
+.single-blog-style1 .text-holder .blog-title .round-box {
+    background-color: #b7a68b !important;
+}
+
+/* ---- PAGINACIÓN ---- */
+.styled-pagination li.active a,
+.styled-pagination li:hover a {
+    background-color: #b7a68b !important;
+    color: #ffffff !important;
+}
+
+/* ---- FOOTER STYLE TWO ---- */
+.footer-style2-area {
+    background-color: #0c1417 !important; /* Fondo oscuro corporativo */
+}
+/* Puntos de los títulos del footer */
+.single-footer-widget .title h3 span {
+    background-color: #b7a68b !important;
+}
+/* Enlace "Read More" del widget 'About Us' */
+.widget-company-info .readmore a {
+    color: #b7a68b !important;
+}
+.widget-company-info .readmore a:hover {
+    color: #f3e0c0 !important;
+}
+/* Enlaces de los widgets */
+.single-footer-widget ul li a:hover {
+    color: #b7a68b !important;
+}
+/* Botón del newsletter */
+.subscribe-form button.btn-one {
+    background-color: #b7a68b !important;
+    color: #ffffff !important;
+}
+.subscribe-form button.btn-one:hover {
+    background-color: #6f685a !important;
+    color: #ffffff !important;
+}
+/* Footer Bottom */
+.footer-bottom-style2 {
+    background-color: #000000 !important; /* Negro puro para contraste */
+}
+
+/* ============================================
+   OVERLAY NEGRO 30% EN BREADCRUMB (HERO DEL BLOG)
+   ============================================ */
+.breadcrumb-area {
+    position: relative;
+    z-index: 1;
+}
+.breadcrumb-area::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Negro 30% opacidad */
+    z-index: 0;
+    pointer-events: none;
+}
+/* Asegura que el contenido quede por encima del overlay */
+.breadcrumb-area .container {
+    position: relative;
+    z-index: 2;
+}
