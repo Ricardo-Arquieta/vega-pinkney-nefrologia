@@ -1073,3 +1073,17 @@ HERO VIDEO ICON – ONDAS BEIGE EN LUGAR DE AZUL
     position: relative;
     z-index: 2;
 }
+
+/* ============================================
+   COLOR DE ICONOS SVG EN FEATURED AREA
+   ============================================ */
+.featured-area .service-icon {
+    color: #b7a68b; /* Beige acento */
+    width: 60px;    /* Tamaño similar al original */
+    height: 60px;
+}
+/* Aseguramos que los paths hereden el color */
+.featured-area .service-icon path,
+.featured-area .service-icon g {
+    fill: currentColor;
+}
