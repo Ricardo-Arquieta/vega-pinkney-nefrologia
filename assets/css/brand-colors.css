@@ -1087,3 +1087,112 @@ HERO VIDEO ICON – ONDAS BEIGE EN LUGAR DE AZUL
 .featured-area .service-icon g {
     fill: currentColor;
 }
+
+/* ============================================
+   CARRUSEL DE SERVICIOS (SWIPER)
+   ============================================ */
+.service-swiper {
+    padding-bottom: 60px; /* espacio para los dots */
+}
+.service-swiper .swiper-slide {
+    background-color: transparent;
+}
+/* Imagen */
+.service-media {
+    border-radius: 20px;
+    overflow: hidden;
+}
+.service-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+    transition: transform 0.4s ease;
+}
+.service-swiper .swiper-slide-active .service-img {
+    transform: scale(1.02); /* sutil zoom en la activa */
+}
+/* Contenido textual */
+.service-content .service-title {
+    font-size: 2rem;
+    color: var(--color-dark);
+    margin-bottom: 20px;
+}
+.service-content .service-text {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: var(--color-muted);
+    margin-bottom: 20px;
+}
+.service-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 25px;
+}
+.service-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 8px;
+    color: var(--color-dark);
+}
+.service-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--color-accent); /* beige */
+    font-weight: bold;
+}
+.service-content .btn-one {
+    background-color: var(--color-accent);
+    color: #ffffff;
+}
+.service-content .btn-one:hover {
+    background-color: var(--color-secondary);
+    color: #ffffff;
+}
+
+/* Flechas de navegación */
+.service-swiper .swiper-button-next,
+.service-swiper .swiper-button-prev {
+    color: var(--color-accent);
+    background: rgba(255,255,255,0.9);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+.service-swiper .swiper-button-next:hover,
+.service-swiper .swiper-button-prev:hover {
+    background: var(--color-accent);
+    color: #ffffff;
+}
+.service-swiper .swiper-button-next::after,
+.service-swiper .swiper-button-prev::after {
+    font-size: 18px;
+}
+
+/* Paginación (puntos) */
+.service-swiper .swiper-pagination {
+    bottom: 0;
+}
+.service-swiper .swiper-pagination-bullet {
+    background: var(--color-muted);
+    opacity: 1;
+}
+.service-swiper .swiper-pagination-bullet-active {
+    background: var(--color-accent);
+}
+
+/* Responsive: en móvil, imagen y texto apilados */
+@media (max-width: 767px) {
+    .service-swiper .row {
+        flex-direction: column;
+    }
+    .service-content .service-title {
+        font-size: 1.5rem;
+    }
+    .service-swiper .swiper-button-next,
+    .service-swiper .swiper-button-prev {
+        display: none;
+    }
+}
