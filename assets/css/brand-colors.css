@@ -1075,37 +1075,36 @@ HERO VIDEO ICON – ONDAS BEIGE EN LUGAR DE AZUL
 }
 
 /* ============================================
-   COLOR DE ICONOS SVG EN FEATURED AREA
-   ============================================ */
-.featured-area .service-icon {
-    color: #b7a68b; /* Beige acento */
-    width: 60px;    /* Tamaño similar al original */
-    height: 60px;
-}
-/* Aseguramos que los paths hereden el color */
-.featured-area .service-icon path,
-.featured-area .service-icon g {
-    fill: currentColor;
-}
-
-/* ============================================
-   CARRUSEL DE SERVICIOS (SWIPER) – NAVEGACIÓN INFERIOR
+   CARRUSEL DE SERVICIOS (SWIPER) – IMAGEN GRANDE Y CONTROLES INFERIORES
    ============================================ */
 .service-swiper {
-    padding-bottom: 120px !important; /* Más espacio para los puntos y las flechas */
+    padding-bottom: 120px !important;
     position: relative;
 }
 .service-swiper .swiper-slide {
     background-color: transparent;
 }
-/* Imagen */
+
+/* === Ajuste de columnas: imagen más ancha (7/12) y texto (5/12) === */
+.service-swiper .swiper-slide .col-xl-6 {
+    flex: 0 0 58.333%; /* 7/12 para la imagen */
+    max-width: 58.333%;
+}
+.service-swiper .swiper-slide .col-xl-6:last-child {
+    flex: 0 0 41.667%; /* 5/12 para el texto */
+    max-width: 41.667%;
+}
+
+/* === Contenedor de imagen con altura fija y recorte limpio === */
 .service-media {
     border-radius: 20px;
     overflow: hidden;
+    height: 420px; /* Altura fija, no cambia con el texto */
 }
 .service-img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover; /* Llena el contenedor sin deformarse */
     display: block;
     border-radius: 20px;
     transition: transform 0.4s ease;
@@ -1113,6 +1112,7 @@ HERO VIDEO ICON – ONDAS BEIGE EN LUGAR DE AZUL
 .service-swiper .swiper-slide-active .service-img {
     transform: scale(1.02);
 }
+
 /* Contenido textual */
 .service-content .service-title {
     font-size: 2rem;
@@ -1153,9 +1153,7 @@ HERO VIDEO ICON – ONDAS BEIGE EN LUGAR DE AZUL
     color: #ffffff;
 }
 
-/* ============================================
-   FLECHAS DE NAVEGACIÓN (AHORA ABAJO Y CENTRADAS)
-   ============================================ */
+/* Flechas de navegación (abajo, centradas) */
 .service-swiper .swiper-button-next,
 .service-swiper .swiper-button-prev {
     color: var(--color-accent);
@@ -1165,20 +1163,18 @@ HERO VIDEO ICON – ONDAS BEIGE EN LUGAR DE AZUL
     border-radius: 50%;
     transition: all 0.3s;
     position: absolute;
-    /* Quitamos el anclaje lateral y lo mandamos abajo */
     top: auto;
-    bottom: 40px; /* Encima de los puntos (que están en bottom 0) */
+    bottom: 40px;
     margin-top: 0;
 }
-/* Colocamos las flechas en el centro horizontal con un gap de 60px entre ellas */
 .service-swiper .swiper-button-next {
     left: 50%;
-    transform: translateX(30px); /* 30px a la derecha del centro = gap de 60px */
+    transform: translateX(30px);
     right: auto;
 }
 .service-swiper .swiper-button-prev {
     right: 50%;
-    transform: translateX(-30px); /* 30px a la izquierda del centro */
+    transform: translateX(-30px);
     left: auto;
 }
 .service-swiper .swiper-button-next:hover,
@@ -1191,11 +1187,9 @@ HERO VIDEO ICON – ONDAS BEIGE EN LUGAR DE AZUL
     font-size: 18px;
 }
 
-/* ============================================
-   PUNTOS DE PAGINACIÓN (ABAJO DEL TODO)
-   ============================================ */
+/* Paginación (puntos) */
 .service-swiper .swiper-pagination {
-    bottom: 5px; /* Pegados al fondo */
+    bottom: 5px;
 }
 .service-swiper .swiper-pagination-bullet {
     background: var(--color-muted);
@@ -1207,14 +1201,19 @@ HERO VIDEO ICON – ONDAS BEIGE EN LUGAR DE AZUL
 
 /* Responsive */
 @media (max-width: 767px) {
-    .service-swiper .row {
-        flex-direction: column;
+    .service-swiper .swiper-slide .col-xl-6,
+    .service-swiper .swiper-slide .col-xl-6:last-child {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+    .service-media {
+        height: 280px; /* Más compacta en móvil */
     }
     .service-content .service-title {
         font-size: 1.5rem;
     }
     .service-swiper .swiper-button-next,
     .service-swiper .swiper-button-prev {
-        display: none; /* En móvil, solo puntos */
+        display: none;
     }
 }
