@@ -1089,10 +1089,11 @@ HERO VIDEO ICON – ONDAS BEIGE EN LUGAR DE AZUL
 }
 
 /* ============================================
-   CARRUSEL DE SERVICIOS (SWIPER)
+   CARRUSEL DE SERVICIOS (SWIPER) – NAVEGACIÓN INFERIOR
    ============================================ */
 .service-swiper {
-    padding-bottom: 60px; /* espacio para los dots */
+    padding-bottom: 120px !important; /* Más espacio para los puntos y las flechas */
+    position: relative;
 }
 .service-swiper .swiper-slide {
     background-color: transparent;
@@ -1110,7 +1111,7 @@ HERO VIDEO ICON – ONDAS BEIGE EN LUGAR DE AZUL
     transition: transform 0.4s ease;
 }
 .service-swiper .swiper-slide-active .service-img {
-    transform: scale(1.02); /* sutil zoom en la activa */
+    transform: scale(1.02);
 }
 /* Contenido textual */
 .service-content .service-title {
@@ -1139,27 +1140,46 @@ HERO VIDEO ICON – ONDAS BEIGE EN LUGAR DE AZUL
     content: "✓";
     position: absolute;
     left: 0;
-    color: var(--color-accent); /* beige */
+    color: var(--color-accent);
     font-weight: bold;
 }
 .service-content .btn-one {
     background-color: var(--color-accent);
     color: #ffffff;
+    margin-bottom: 30px !important;
 }
 .service-content .btn-one:hover {
     background-color: var(--color-secondary);
     color: #ffffff;
 }
 
-/* Flechas de navegación */
+/* ============================================
+   FLECHAS DE NAVEGACIÓN (AHORA ABAJO Y CENTRADAS)
+   ============================================ */
 .service-swiper .swiper-button-next,
 .service-swiper .swiper-button-prev {
     color: var(--color-accent);
-    background: rgba(255,255,255,0.9);
+    background: rgba(255, 255, 255, 0.9);
     width: 45px;
     height: 45px;
     border-radius: 50%;
     transition: all 0.3s;
+    position: absolute;
+    /* Quitamos el anclaje lateral y lo mandamos abajo */
+    top: auto;
+    bottom: 40px; /* Encima de los puntos (que están en bottom 0) */
+    margin-top: 0;
+}
+/* Colocamos las flechas en el centro horizontal con un gap de 60px entre ellas */
+.service-swiper .swiper-button-next {
+    left: 50%;
+    transform: translateX(30px); /* 30px a la derecha del centro = gap de 60px */
+    right: auto;
+}
+.service-swiper .swiper-button-prev {
+    right: 50%;
+    transform: translateX(-30px); /* 30px a la izquierda del centro */
+    left: auto;
 }
 .service-swiper .swiper-button-next:hover,
 .service-swiper .swiper-button-prev:hover {
@@ -1171,9 +1191,11 @@ HERO VIDEO ICON – ONDAS BEIGE EN LUGAR DE AZUL
     font-size: 18px;
 }
 
-/* Paginación (puntos) */
+/* ============================================
+   PUNTOS DE PAGINACIÓN (ABAJO DEL TODO)
+   ============================================ */
 .service-swiper .swiper-pagination {
-    bottom: 0;
+    bottom: 5px; /* Pegados al fondo */
 }
 .service-swiper .swiper-pagination-bullet {
     background: var(--color-muted);
@@ -1183,7 +1205,7 @@ HERO VIDEO ICON – ONDAS BEIGE EN LUGAR DE AZUL
     background: var(--color-accent);
 }
 
-/* Responsive: en móvil, imagen y texto apilados */
+/* Responsive */
 @media (max-width: 767px) {
     .service-swiper .row {
         flex-direction: column;
@@ -1193,6 +1215,6 @@ HERO VIDEO ICON – ONDAS BEIGE EN LUGAR DE AZUL
     }
     .service-swiper .swiper-button-next,
     .service-swiper .swiper-button-prev {
-        display: none;
+        display: none; /* En móvil, solo puntos */
     }
 }
