@@ -273,12 +273,18 @@ Efecto Glassmorphism: fondo negro transparente con blur
 }
 
 /* ============================================
-COLORES DE ICONOS EN FEATURED AREA
+COLORES DE ICONOS SVG EN FEATURED AREA
    ============================================ */
-.featured-area .clr1 .fa,
-.featured-area .clr2 .fa,
-.featured-area .clr3 .fa {
-    color: #b7a68b; /* Unificamos al beige acento */
+.featured-area .clr1 .service-icon,
+.featured-area .clr2 .service-icon,
+.featured-area .clr3 .service-icon {
+    color: #b7a68b; /* Beige acento */
+    width: 60px;
+    height: 60px;
+}
+.featured-area .service-icon path,
+.featured-area .service-icon g {
+    fill: currentColor;
 }
 
 /* ============================================
