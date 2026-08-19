@@ -176,7 +176,7 @@
                                     <li class="dropdown current"><a href="#">Blog</a>
                                         <ul>
                                             <li><a href="blog-v2.html">Blog Grid View</a></li>
-                                            <li><a href="blog-single.html">Artículo Completo</a></li>
+                                            <li><a href="articulo.html?articulo=habitos-renales">Artículo Completo</a></li>
                                         </ul>
                                     </li>
                                 </ul>
@@ -290,6 +290,10 @@
 <!--Start Blog Style2 Area-->
 <section id="blog-area" class="blog-grid-area">
     <div class="container">
+        <div class="blog-search-box">
+            <input type="text" id="buscador-blog" placeholder="Buscar artículos...">
+            <i class="fa fa-search" aria-hidden="true"></i>
+        </div>
         <div class="row">
             <!--Start Single blog Style1-->
             <div class="col-xl-4 col-lg-6 col-md-6">
@@ -305,7 +309,7 @@
                             <li><span class="icon-user"></span><a href="#">Dr. Francisco Vega Pinkney</a></li>
                             <li><span class="icon-tag"></span><a href="#">Nefrología, Prevención</a></li>
                         </ul>
-                        <h3 class="blog-title"><a href="blog-single.html">Cinco hábitos diarios para mantener sus riñones sanos<span class="round-box zoominout"></span></a></h3>
+                        <h3 class="blog-title"><a href="articulo.html?articulo=habitos-renales">Cinco hábitos diarios para mantener sus riñones sanos<span class="round-box zoominout"></span></a></h3>
                     </div> 
                 </div> 
             </div>
@@ -324,7 +328,7 @@
                             <li><span class="icon-user"></span><a href="#">Dr. Francisco Vega Pinkney</a></li>
                             <li><span class="icon-tag"></span><a href="#">Diálisis, Hemodiálisis</a></li>
                         </ul>
-                        <h3 class="blog-title"><a href="blog-single.html">¿Qué esperar durante su primera sesión de hemodiálisis?<span class="round-box zoominout"></span></a></h3>
+                        <h3 class="blog-title"><a href="articulo.html?articulo=primera-hemodialisis">¿Qué esperar durante su primera sesión de hemodiálisis?<span class="round-box zoominout"></span></a></h3>
                     </div> 
                 </div>
             </div>
@@ -343,7 +347,7 @@
                             <li><span class="icon-user"></span><a href="#">Dr. Francisco Vega Pinkney</a></li>
                             <li><span class="icon-tag"></span><a href="#">Trasplante Renal</a></li>
                         </ul>
-                        <h3 class="blog-title"><a href="blog-single.html">Avances en trasplante renal: compatibilidad y calidad de vida<span class="round-box zoominout"></span></a></h3>
+                        <h3 class="blog-title"><a href="articulo.html?articulo=avances-trasplante-renal">Avances en trasplante renal: compatibilidad y calidad de vida<span class="round-box zoominout"></span></a></h3>
                     </div> 
                 </div>
             </div>
@@ -539,7 +543,16 @@
 <!-- thm custom script -->
 <script src="assets/js/custom.js"></script>
 
-
+<script>
+    document.getElementById('buscador-blog').addEventListener('input', function() {
+        const filtro = this.value.toLowerCase();
+        const tarjetas = document.querySelectorAll('.single-blog-style1');
+        tarjetas.forEach(tarjeta => {
+            const texto = tarjeta.textContent.toLowerCase();
+            tarjeta.style.display = texto.includes(filtro) ? '' : 'none';
+        });
+    });
+</script>
 
 </body>
 </html>

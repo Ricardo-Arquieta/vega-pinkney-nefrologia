@@ -1223,3 +1223,44 @@ HERO VIDEO ICON – ONDAS BEIGE EN LUGAR DE AZUL
         display: none;
     }
 }
+
+/* Buscador del blog */
+.blog-search-box {
+    max-width: 400px;
+    margin: 0 auto 40px;
+    position: relative;
+}
+.blog-search-box input {
+    width: 100%;
+    height: 50px;
+    padding: 0 45px 0 20px;
+    border-radius: 30px;
+    border: 1px solid #e0e0e0;
+    font-size: 16px;
+}
+.blog-search-box i {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    color: #b7a68b;
+}
+/* Estilo para listas en artículo */
+#articulo-contenido .service-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 20px;
+}
+#articulo-contenido .service-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    color: #333;
+}
+#articulo-contenido .service-list li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #b7a68b;
+    font-weight: bold;
+}
