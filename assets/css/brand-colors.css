@@ -1349,3 +1349,13 @@ HERO VIDEO ICON – ONDAS BEIGE EN LUGAR DE AZUL
     background: #6f685a !important;
     color: #ffffff !important;
 }
+
+/* ============================================
+   ETIQUETA DE CATEGORÍA EN ARTÍCULO - AZUL
+   ============================================ */
+.single-blog-style2 .text-holder .categories {
+    background-color: #393D72 !important; /* Azul indicado */
+}
+.single-blog-style2 .text-holder .categories h5 {
+    color: #ffffff !important; /* Texto blanco */
+}
