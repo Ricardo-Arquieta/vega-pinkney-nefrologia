@@ -1359,3 +1359,32 @@ HERO VIDEO ICON – ONDAS BEIGE EN LUGAR DE AZUL
 .single-blog-style2 .text-holder .categories h5 {
     color: #ffffff !important; /* Texto blanco */
 }
+
+/* ============================================
+   ICONOS DE USUARIO Y CALENDARIO - AZUL
+   ============================================ */
+.single-blog-style2 .text-holder .meta-info li span.icon-user::before,
+.single-blog-style2 .text-holder .meta-info li span.icon-calendar::before,
+.single-blog-style2 .text-holder .meta-info li span.icon-calendar-1::before,
+.sidebar-wrapper .single-sidebar .meta-info li span.icon-user::before,
+.sidebar-wrapper .single-sidebar .meta-info li span.icon-calendar::before,
+.sidebar-wrapper .single-sidebar .meta-info li span.icon-calendar-1::before {
+    color: #393D72 !important; /* Azul corporativo */
+}
+
+.single-blog-style2 .text-holder .meta-info li span.icon-user,
+.single-blog-style2 .text-holder .meta-info li span.icon-calendar,
+.single-blog-style2 .text-holder .meta-info li span.icon-calendar-1,
+.sidebar-wrapper .single-sidebar .meta-info li span.icon-user,
+.sidebar-wrapper .single-sidebar .meta-info li span.icon-calendar,
+.sidebar-wrapper .single-sidebar .meta-info li span.icon-calendar-1 {
+    color: #393D72 !important;
+}
+
+/* ============================================
+   ICONO DE CALENDARIO EN ARTÍCULOS RECIENTES
+   ============================================ */
+.popular-feeds li .title-box h6 span.icon-calendar-1,
+.popular-feeds li .title-box h6 span.icon-calendar-1::before {
+    color: #393D72 !important;
+}
