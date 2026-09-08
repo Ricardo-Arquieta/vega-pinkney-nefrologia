@@ -1312,3 +1312,40 @@ HERO VIDEO ICON – ONDAS BEIGE EN LUGAR DE AZUL
     object-fit: cover; /* Recorta sin deformar */
     border-radius: 50%;
 }
+
+/* ============================================
+   SIDEBAR CATEGORÍAS - ELIMINAR ROSA (REFORZADO)
+   ============================================ */
+.sidebar-wrapper .single-sidebar .title:before {
+    background-color: #b7a68b !important; /* Línea decorativa beige */
+}
+.categorie-boxs li a {
+    background: #f9f9f9 !important;
+    color: #0c1417 !important;
+}
+/* Capa decorativa que aparece en hover */
+.categorie-boxs li a::before {
+    background: #b7a68b !important;
+    z-index: -1;
+}
+/* Hover y estado activo */
+.categorie-boxs li:hover a,
+.categorie-boxs li.active a {
+    background: #b7a68b !important;
+    color: #ffffff !important;
+}
+.categorie-boxs li:hover a::before,
+.categorie-boxs li.active a::before {
+    background: #b7a68b !important;
+    transform: scaleY(1) !important;
+}
+/* Números laterales */
+.categorie-boxs li a span {
+    background: #b7a68b !important;
+    color: #ffffff !important;
+}
+.categorie-boxs li:hover a span,
+.categorie-boxs li.active a span {
+    background: #6f685a !important;
+    color: #ffffff !important;
+}
