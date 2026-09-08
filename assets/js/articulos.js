@@ -11,6 +11,7 @@ const articulos = [
         titulo: 'Etapas de la enfermedad renal: ¿Qué significan G1, G2, G3a, G3b, G4 y G5?',
         fecha: '22 Junio 2025',
         autor: 'Dr. Francisco Vega Pinkney',
+        imagen: 'assets/images/blog/etapas_salud-renal.jpg',
         contenido: `
             <p>Recibir un diagnóstico como "enfermedad renal en estadio 3" puede asustar. Pero aquí va la buena noticia:<br>
             El estadio NO es una sentencia. No es una cuenta regresiva automática hacia la diálisis.<br>
@@ -255,6 +256,7 @@ const articulos = [
         titulo: 'Ejercicio y enfermedad renal: Sí se puede (y tal vez deberías empezar ya) 💪',
         fecha: '15 Junio 2025',
         autor: 'Dr. Francisco Vega Pinkney',
+        imagen: 'assets/images/blog/Ejercicio_Salud-Renal.jpg',
         contenido: `
             <p>"Doctor, ¿puedo hacer ejercicio?"<br>
             Esta es una de las preguntas que más escucho en consulta. Y la respuesta, en la mayoría de los casos, es un SÍ rotundo.</p>
@@ -352,14 +354,20 @@ const articulos = [
 // Función para cargar un artículo según el parámetro 'articulo'
 function cargarArticulo() {
     const params = new URLSearchParams(window.location.search);
-    const idArticulo = params.get('articulo') || 'habitos-renales';
+    const idArticulo = params.get('articulo') || 'etapas-enfermedad-renal';
     const articulo = articulos.find(a => a.id === idArticulo) || articulos[0];
 
-    // Rellenar breadcrumb
+    // Actualizar breadcrumb (texto e imagen)
     document.getElementById('breadcrumb-titulo').innerHTML = `${articulo.titulo}<span class="dotted"></span>`;
     document.getElementById('breadcrumb-categoria').textContent = articulo.categoria;
 
-    // Rellenar artículo
+    // Cambiar imagen de fondo del breadcrumb
+    const breadcrumb = document.getElementById('breadcrumb-imagen');
+    if (breadcrumb && articulo.imagen) {
+        breadcrumb.style.backgroundImage = `url(${articulo.imagen})`;
+    }
+
+    // Actualizar contenido del artículo
     document.getElementById('articulo-categoria').textContent = articulo.categoria;
     document.getElementById('articulo-titulo').textContent = articulo.titulo;
     document.getElementById('articulo-fecha').textContent = articulo.fecha;
