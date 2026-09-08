@@ -1286,3 +1286,29 @@ HERO VIDEO ICON – ONDAS BEIGE EN LUGAR DE AZUL
     background-size: 100% 100%;
     z-index: 2; /* Por encima de la imagen */
 }
+
+/* ============================================
+   SIDEBAR SOBRE EL DOCTOR - SEPARACIÓN DE TEXTOS
+   ============================================ */
+.sidebar-about-me-box .text-holder h3 {
+    margin-top: 80px; /* Baja el nombre */
+}
+.sidebar-about-me-box .text-holder p {
+    margin-top: 10px; /* Baja la descripción */
+}
+
+/* ============================================
+   ARTÍCULOS RECIENTES - IMÁGENES CIRCULARES
+   ============================================ */
+.popular-feeds .img-box {
+    width: 80px;      /* Ajuste al tamaño original si es distinto */
+    height: 80px;     /* Mismo alto que ancho para círculo perfecto */
+    border-radius: 50%;
+    overflow: hidden;
+}
+.popular-feeds .img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Recorta sin deformar */
+    border-radius: 50%;
+}

@@ -382,7 +382,7 @@ function cargarRecientes() {
         <li>
             <div class="inner">
                 <div class="img-box">
-                    <img src="assets/images/blog/author.jpg" alt="${a.titulo}">
+                    <img src="${a.imagen}" alt="${a.titulo}">
                 </div>
                 <div class="title-box">
                     <h4><a href="articulo.html?articulo=${a.id}">${a.titulo}</a></h4>
