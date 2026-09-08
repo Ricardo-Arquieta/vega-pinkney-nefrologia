@@ -1,5 +1,10 @@
 // Base de datos de artículos del blog
+
 const articulos = [
+    /* ============================================
+    ARTÍCULO 1 - Etapas de la enfermedad renal
+    ============================================ */
+    
     {
         id: 'etapas-enfermedad-renal',
         categoria: 'Prevención',
@@ -241,23 +246,93 @@ const articulos = [
             El estadio es un punto de partida para cuidar los riñones, NO una sentencia sobre el futuro.</p>
         `
     },
+    /* ============================================
+    ARTÍCULO 2 -  Ejercicio y enfermedad renal
+    ============================================ */
     {
-        id: 'primera-hemodialisis',
-        categoria: 'Diálisis',
-        titulo: '¿Qué esperar durante su primera sesión de hemodiálisis?',
+        id: 'ejercicio-y-enfermedad-renal',
+        categoria: 'Actividad física',
+        titulo: 'Ejercicio y enfermedad renal: Sí se puede (y tal vez deberías empezar ya) 💪',
         fecha: '15 Junio 2025',
         autor: 'Dr. Francisco Vega Pinkney',
         contenido: `
-            <p>La hemodiálisis es un tratamiento que sustituye la función de los riñones cuando estos ya no pueden filtrar la sangre adecuadamente.</p>
-            <p>En la primera sesión, el paciente es recibido por un equipo multidisciplinario que le explicará cada paso y le ayudará a sentirse cómodo.</p>
-            <ul class="service-list">
-                <li>Se realiza una revisión de signos vitales y acceso vascular.</li>
-                <li>La sesión suele durar entre 3 y 4 horas.</li>
-                <li>Puede leer, descansar o ver televisión durante el tratamiento.</li>
+            <p>"Doctor, ¿puedo hacer ejercicio?"<br>
+            Esta es una de las preguntas que más escucho en consulta. Y la respuesta, en la mayoría de los casos, es un SÍ rotundo.</p>
+            <p>De hecho, mantenerse activo no solo es seguro: puede mejorar tu condición física, bajar la presión arterial, aumentar tu fuerza muscular, darte más energía y elevar tu calidad de vida.</p>
+            <p>Lo importante no es hacer el ejercicio "perfecto". Lo importante es hacer un plan seguro, progresivo y adaptado a tu tipo de enfermedad renal o tratamiento.</p>
+
+            <h2>¿Qué puedes hacer si tienes enfermedad renal (estadios 1 a 4)?</h2>
+            <p>Si tu enfermedad está estable, muchas actividades son totalmente viables:</p>
+            <ul>
+                <li>🚶 Caminar</li>
+                <li>🚴 Bicicleta</li>
+                <li>🏊 Natación</li>
+                <li>💪 Ejercicios con ligas o bandas elásticas</li>
+                <li>🪑 Sentarte y pararte de una silla</li>
+                <li>🪜 Subir escalones</li>
+                <li>🧘 Trabajo de equilibrio y flexibilidad</li>
             </ul>
-            <p>Es normal sentir cierta ansiedad al principio, pero la mayoría de los pacientes se adaptan rápidamente con el acompañamiento adecuado.</p>
+            <p><strong>La mejor combinación:</strong> ejercicio aeróbico + ejercicios de fuerza.</p>
+            <p><strong>Meta recomendada:</strong> llegar poco a poco a 150 minutos por semana de actividad moderada, más fuerza 2 días por semana.</p>
+            <p>¿Hoy haces cero? No pasa nada. Empezar con 10 a 15 minutos también cuenta. El primer paso es el más importante.</p>
+
+            <h2>Rutina sencilla para hacer en casa</h2>
+            <p>No necesitas gimnasio ni equipo costoso. Una rutina básica puede incluir:</p>
+            <ul>
+                <li>Caminata (dentro o fuera de casa)</li>
+                <li>Marchar en el lugar</li>
+                <li>Sentarse y levantarse de una silla</li>
+                <li>Elevaciones de talones</li>
+                <li>Sentadillas cortas</li>
+                <li>Empujes en pared</li>
+                <li>Trabajo con bandas elásticas</li>
+            </ul>
+            <p>¿Te fatigas rápido? Divide el ejercicio en bloques pequeños y suma el tiempo total durante el día.</p>
+            <p>Un estudio en personas con enfermedad renal estadio 4 mostró que un programa en casa (ejercicio aeróbico 3 veces por semana + fuerza 2 veces) mejoró la capacidad para caminar y varios aspectos de la calidad de vida.</p>
+
+            <h2>Si estás en hemodiálisis</h2>
+            <p>También puedes beneficiarte del ejercicio. Algunas personas lo hacen durante la sesión de diálisis (con bici o ejercicios supervisados), otras prefieren hacerlo fuera de la unidad.</p>
+            <p><strong>Cuidados especiales con el acceso vascular:</strong></p>
+            <ul>
+                <li>🚫 Si tienes fístula o injerto: evita golpes, compresión y cargas excesivas en ese brazo</li>
+                <li>🚫 Si tienes catéter: protégelo de la humedad (nadar o meterte a tina no suele ser buena idea)</li>
+            </ul>
+
+            <h2>Si estás en diálisis peritoneal</h2>
+            <p>¡Muy buenas noticias! Caminar suele ser seguro incluso poco tiempo después de colocar el catéter.</p>
+            <p>Para actividades suaves (caminar, senderismo, trote suave): muchas veces no hace falta drenar el líquido antes, a menos que la sensación de llenura te incomode.</p>
+            <p>Para ejercicios intensos (levantar peso, saltar, abdominales fuertes): sí conviene drenar antes y seguir las indicaciones de tu equipo.</p>
+            <p>Fortalecer el abdomen y el tronco de forma progresiva puede ser útil, pero con técnica y tiempos adecuados.</p>
+
+            <h2>Si tienes trasplante renal</h2>
+            <p>El ejercicio forma parte del cuidado del injerto y de tu salud cardiovascular.</p>
+            <p><strong>Recomendación inicial:</strong> caminar.</p>
+            <p><strong>Más adelante:</strong> muchas personas pueden volver a bicicleta, natación, caminata vigorosa o trabajo de fuerza.</p>
+            <p><strong>Con cautela:</strong> deportes de contacto y pruebas extremas de larga duración (podrían poner en riesgo el injerto).</p>
+
+            <h2>Hidratación: no hay receta única</h2>
+            <p>Este punto es clave. No todos necesitan lo mismo.</p>
+            <ul>
+                <li>✅ Ejercicios suaves o moderados de corta duración: agua simple suele ser suficiente</li>
+                <li>❌ Bebidas con electrolitos o geles: no suelen hacer falta para la mayoría de pacientes renales que apenas empiezan</li>
+                <li>⚠️ Ejercicios largos, con calor o mucho sudor: estos productos pueden tener sentido, pero en enfermedad renal avanzada, diálisis o trasplante deben usarse con cuidado (pueden aportar sodio, potasio, azúcares o cafeína)</li>
+            </ul>
+            <p><strong>Importante:</strong> algunas personas necesitan restricción de líquidos. La mejor referencia es la cantidad que tu nefrólogo o nutriólogo renal te haya indicado.</p>
+
+            <h2>El mensaje más importante</h2>
+            <p>El mejor ejercicio para una persona con enfermedad renal no es el más intenso, sino el que puede hacer con seguridad, constancia y buena supervisión.</p>
+            <p>Si tienes dudas, pregunta en consulta qué tipo de ejercicio te conviene más según:</p>
+            <ul>
+                <li>Tu estadio renal</li>
+                <li>Tus síntomas</li>
+                <li>Tu presión arterial</li>
+                <li>Tu hemoglobina</li>
+                <li>Tu acceso de diálisis o trasplante</li>
+            </ul>
+            <p>No esperes al "momento perfecto". El momento es ahora. Tu cuerpo (y tus riñones) te lo agradecerán. 🩺💙</p>
         `
     },
+
     {
         id: 'avances-trasplante-renal',
         categoria: 'Trasplante',
