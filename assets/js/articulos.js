@@ -332,7 +332,9 @@ const articulos = [
             <p>No esperes al "momento perfecto". El momento es ahora. Tu cuerpo (y tus riñones) te lo agradecerán. 🩺💙</p>
         `
     },
-
+    /* ============================================
+    ARTÍCULO 3 -  Ejercicio y enfermedad renal
+    ============================================ */
     {
         id: 'avances-trasplante-renal',
         categoria: 'Trasplante',
