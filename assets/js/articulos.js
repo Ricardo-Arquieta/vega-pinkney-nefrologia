@@ -335,20 +335,143 @@ const articulos = [
         `
     },
     /* ============================================
-    ARTÍCULO 3 -  Ejercicio y enfermedad renal
-    ============================================ */
+   ARTÍCULO 3 - Comezón en la enfermedad renal
+   ============================================ */
     {
-        id: 'avances-trasplante-renal',
-        categoria: 'Trasplante',
-        titulo: 'Avances en trasplante renal: compatibilidad y calidad de vida',
-        fecha: '01 Junio 2025',
+        id: 'comezon-enfermedad-renal',
+        categoria: 'Síntomas',
+        titulo: 'Comezón en la enfermedad renal: Por qué aparece y cómo aliviarla 🩺',
+        fecha: '08 Julio 2025',
         autor: 'Dr. Francisco Vega Pinkney',
+        imagen: 'assets/images/blog/comezon_enfermedad-renal.jpg',
         contenido: `
-            <p>El trasplante renal es hoy en día una de las mejores opciones de tratamiento para pacientes con enfermedad renal avanzada.</p>
-            <p>Gracias a los avances en inmunología y técnicas quirúrgicas, la compatibilidad entre donante y receptor ha mejorado notablemente.</p>
-            <p>Un seguimiento adecuado después del trasplante permite reducir el riesgo de rechazo y mejorar la calidad de vida del paciente.</p>
+            <p>¿La comezón te despierta por la noche? ¿Te obliga a rascarte constantemente durante el día?</p>
+            <p>Si vives con enfermedad renal crónica, este síntoma puede afectar tu descanso, tu estado de ánimo y tus actividades diarias.</p>
+            <p><strong>La buena noticia:</strong> Aunque es frecuente, merece atención y existen opciones para aliviarla.</p>
+
+            <h2>¿Qué tan frecuente es?</h2>
+            <p>La comezón (también llamada prurito) puede aparecer tanto en personas que aún no requieren diálisis como en quienes reciben diálisis peritoneal o hemodiálisis.</p>
+            <p><strong>Dato importante:</strong> En pacientes en hemodiálisis, aproximadamente 3 a 4 de cada 10 personas presentan comezón de intensidad moderada a severa.</p>
+            <p><strong>Pero aquí está el problema:</strong> Muchas personas no lo comentan en consulta porque creen que es algo que "deben soportar" o que no tiene tratamiento.</p>
+            <p>Eso no es cierto. La comezón merece ser escuchada y tratada.</p>
+
+            <h2>¿Por qué da comezón cuando tienes enfermedad renal?</h2>
+            <p>No existe una sola explicación. En el prurito asociado a la enfermedad renal pueden participar:</p>
+            <ul>
+                <li>🧠 Cambios en las señales nerviosas que transmiten la picazón</li>
+                <li>🔥 Procesos inflamatorios</li>
+                <li>💧 Resequedad de la piel</li>
+            </ul>
+            <p><strong>Ojo:</strong> Aunque también se le llama "prurito urémico", no se explica únicamente por la acumulación de sustancias de desecho.</p>
+
+            <h2>Importante: No toda comezón se debe al riñón</h2>
+            <p>También puede relacionarse con:</p>
+            <ul>
+                <li>Dermatitis</li>
+                <li>Urticaria</li>
+                <li>Infecciones de la piel</li>
+                <li>Reacciones a medicamentos</li>
+                <li>Otras enfermedades (como las del hígado)</li>
+            </ul>
+            <p>Incluso pueden coexistir varias causas. Por eso, revisar la piel y los antecedentes es fundamental antes de elegir un tratamiento.</p>
+
+            <h2>¿Cómo se presenta?</h2>
+            <p>La comezón puede:</p>
+            <ul>
+                <li>📍 Sentirse en una zona o en varias partes del cuerpo</li>
+                <li>⏰ Aparecer por momentos o mantenerse durante todo el día</li>
+                <li>🌙 Empeorar por la noche</li>
+            </ul>
+            <p>Tu piel puede verse normal, aunque también puede estar reseca o mostrar marcas y heridas por el rascado.</p>
+            <p>No necesitas tener ronchas para que la comezón sea real y requiera valoración.</p>
+
+            <h2>¿Qué tratamientos existen?</h2>
+            <p>El tratamiento depende de la causa, la intensidad y cuánto interfiere con tu vida. A veces es necesario combinar varias medidas.</p>
+
+            <h4>🧴 1. Cuidar la piel</h4>
+            <ul>
+                <li>Aplicar humectantes diariamente (especialmente después del baño)</li>
+                <li>Usar productos sin perfume</li>
+                <li>Baños breves con agua tibia</li>
+                <li>Limpiadores suaves</li>
+                <li>Ropa que no irrite la piel</li>
+                <li>Mantener las uñas cortas (reduce las lesiones al rascarse)</li>
+            </ul>
+
+            <h4>💊 2. Tratar la causa identificada</h4>
+            <p>Si la comezón viene de una dermatitis, infección o reacción a un medicamento, el abordaje es diferente.</p>
+            <p><strong>Importante:</strong> Si sospechas que un medicamento está relacionado, no lo suspendas por tu cuenta. Consulta con tu médico para valorar la relación entre el fármaco y los síntomas.</p>
+            <p>En algunos casos es útil la valoración conjunta con dermatología.</p>
+
+            <h4>🩺 3. Revisar el tratamiento de la enfermedad renal</h4>
+            <p>En quienes reciben diálisis, se revisa que el tratamiento sea adecuado y se controlan niveles de calcio, fósforo y hormona paratiroidea.</p>
+            <p><strong>Pero ojo:</strong> La comezón no siempre significa que el fósforo esté alto o que la diálisis sea insuficiente. Puede persistir aun cuando estos aspectos estén bien controlados.</p>
+
+            <h4>💉 4. Medicamentos específicos</h4>
+            <p>Cuando se confirma prurito asociado a la enfermedad renal, pueden emplearse medicamentos como:</p>
+            <ul>
+                <li>Gabapentina</li>
+                <li>Pregabalina</li>
+            </ul>
+            <p>Estos requieren ajuste de dosis y vigilancia médica (pueden provocar sueño, mareo y caídas). No deben iniciarse sin indicación médica.</p>
+            <p>También existen otras alternativas como la fototerapia (en casos seleccionados) y la difelikefalina, un medicamento autorizado en la Unión Europea para adultos en hemodiálisis con prurito moderado a severo.</p>
+
+            <h4>⚠️ 5. Las "pastillas para la alergia" NO son la solución universal</h4>
+            <p>En el prurito propio de la enfermedad renal, los antihistamínicos no han demostrado un beneficio consistente.</p>
+            <p>Sentir sueño después de tomarlos no significa que estén tratando la causa real de la comezón.</p>
+
+            <h2>¿Cómo saber cuánto te está afectando?</h2>
+            <p>Las escalas ayudan a describir tus síntomas y comparar cómo cambian con el tratamiento. Hay dos aspectos clave que vale la pena registrar:</p>
+
+            <h4>📊 Intensidad: Escala WI-NRS</h4>
+            <p>Piensa en la comezón más intensa que sentiste en las últimas 24 horas y asígnale un número del 0 al 10:</p>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Puntuación</th>
+                        <th>Intensidad</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>0</td><td>Sin comezón</td></tr>
+                    <tr><td>1-3</td><td>Leve</td></tr>
+                    <tr><td>4-6</td><td>Moderada</td></tr>
+                    <tr><td>7-10</td><td>Intensa o muy intensa</td></tr>
+                </tbody>
+            </table>
+            <p>El 10 representa la peor comezón imaginable.</p>
+            <p><strong>Consejo:</strong> Anota tu puntuación diariamente durante una semana y lleva el registro a consulta.</p>
+
+            <h4>📝 Impacto en tu vida: Escala SADS</h4>
+            <p>Esta herramienta identifica cuál de tres descripciones se parece más a tu situación, considerando:</p>
+            <ul>
+                <li>Marcas de rascado</li>
+                <li>Dificultades para dormir</li>
+                <li>Efecto en tu estado de ánimo</li>
+            </ul>
+            <p>Complementa la puntuación de intensidad: No todo se resume en un número.</p>
+            <p>Puedes consultar las escalas WI-NRS y SADS en español <a href="#">aquí</a> (enlace al consenso español sobre prurito asociado a la enfermedad renal).</p>
+            <p>Estas escalas no determinan la causa ni sustituyen una valoración médica. Su objetivo es ayudarte a explicar cómo te sientes y valorar si el tratamiento está funcionando.</p>
+
+            <h2>No esperes a que sea insoportable para comentarlo 💙</h2>
+            <p>Habla con tu nefrólogo si la comezón:</p>
+            <ul>
+                <li>🚩 Se repite con frecuencia</li>
+                <li>🚩 Interrumpe tu descanso</li>
+                <li>🚩 Te provoca lesiones</li>
+            </ul>
+            <p>Al consultar, explica:</p>
+            <ul>
+                <li>Cuándo comenzó</li>
+                <li>En qué zonas aparece</li>
+                <li>Qué la empeora</li>
+                <li>Si coincide con cambios en tus medicamentos o sesiones de diálisis</li>
+            </ul>
+            <p>Esta información ayuda a orientar la evaluación.</p>
+            <p>Cuidar tus riñones también significa cuidar cómo te sientes. La comezón merece ser escuchada, evaluada y tratada.</p>
         `
-    }
+    },
+    /* ============ FIN ARTÍCULO 3 ============ */
 ];
 
 // Función para cargar un artículo según el parámetro 'articulo'
