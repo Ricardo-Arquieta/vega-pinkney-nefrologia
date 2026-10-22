@@ -9,7 +9,7 @@ const articulos = [
         id: 'etapas-enfermedad-renal',
         categoria: 'Prevención',
         titulo: 'Etapas de la enfermedad renal: ¿Qué significan G1, G2, G3a, G3b, G4 y G5?',
-        fecha: '22 Junio 2025',
+        fecha: '22 Agosto 2026',
         autor: 'Dr. Francisco Vega Pinkney',
         imagen: 'assets/images/blog/etapas_salud-renal.jpg',
         contenido: `
@@ -254,7 +254,7 @@ const articulos = [
         id: 'ejercicio-y-enfermedad-renal',
         categoria: 'Actividad física',
         titulo: 'Ejercicio y enfermedad renal: Sí se puede (y tal vez deberías empezar ya) 💪',
-        fecha: '15 Junio 2025',
+        fecha: '10 Septiembre 2026',
         autor: 'Dr. Francisco Vega Pinkney',
         imagen: 'assets/images/blog/Ejercicio_Salud-Renal.jpg',
         contenido: `
@@ -341,7 +341,7 @@ const articulos = [
         id: 'comezon-enfermedad-renal',
         categoria: 'Síntomas',
         titulo: 'Comezón en la enfermedad renal: Por qué aparece y cómo aliviarla 🩺',
-        fecha: '08 Julio 2025',
+        fecha: '08 Octubre 2026',
         autor: 'Dr. Francisco Vega Pinkney',
         imagen: 'assets/images/blog/comezon_enfermedad-renal.webp',
         contenido: `
