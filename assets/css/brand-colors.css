@@ -1388,3 +1388,16 @@ HERO VIDEO ICON – ONDAS BEIGE EN LUGAR DE AZUL
 .popular-feeds li .title-box h6 span.icon-calendar-1::before {
     color: #393D72 !important;
 }
+
+/* ============================================
+   OVERLAY DEL BLOG - TRANSPARENCIA CONSTANTE
+   ============================================ */
+.blog-style1-area .single-blog-style1 .img-holder .inner:before,
+.blog-grid-area .single-blog-style1 .img-holder .inner:before {
+    background-color: #b7a68b !important;
+}
+.blog-style1-area .single-blog-style1:hover .img-holder .inner:before,
+.blog-grid-area .single-blog-style1:hover .img-holder .inner:before {
+    opacity: 0.45 !important;
+    height: 100%;
+}

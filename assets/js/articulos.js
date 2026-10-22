@@ -343,7 +343,7 @@ const articulos = [
         titulo: 'Comezón en la enfermedad renal: Por qué aparece y cómo aliviarla 🩺',
         fecha: '08 Julio 2025',
         autor: 'Dr. Francisco Vega Pinkney',
-        imagen: 'assets/images/blog/comezon_enfermedad-renal.jpg',
+        imagen: 'assets/images/blog/comezon_enfermedad-renal.webp',
         contenido: `
             <p>¿La comezón te despierta por la noche? ¿Te obliga a rascarte constantemente durante el día?</p>
             <p>Si vives con enfermedad renal crónica, este síntoma puede afectar tu descanso, tu estado de ánimo y tus actividades diarias.</p>
