@@ -1401,3 +1401,25 @@ HERO VIDEO ICON – ONDAS BEIGE EN LUGAR DE AZUL
     opacity: 0.45 !important;
     height: 100%;
 }
+
+/* ============================================
+   HEADER EN CELULAR - LOGO BLANCO Y FONDO TRANSPARENTE
+   ============================================ */
+/* Por defecto (computadora y tablet): solo se ve el logo beige */
+.logo-celular {
+    display: none;
+}
+
+/* Solo en celular (pantalla de 767 o menos) */
+@media (max-width: 767px) {
+    .logo-computadora {
+        display: none;
+    }
+    .logo-celular {
+        display: inline-block;
+    }
+    .main-header.header-style-one .header .outer-box {
+        background: transparent !important;
+        padding: 0 !important;
+    }
+}
