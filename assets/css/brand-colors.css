@@ -1423,3 +1423,39 @@ HERO VIDEO ICON – ONDAS BEIGE EN LUGAR DE AZUL
         padding: 0 !important;
     }
 }
+
+/* ============================================
+   HERO EN CELULAR - IMÁGENES CON MEJOR PROPORCIÓN
+   ============================================ */
+@media (max-width: 767px) {
+    /* Reducción del 40% en la altura para que la imagen se amplíe menos */
+    .main-slider.style1 .slide {
+        padding: 50px 0 45px !important;
+    }
+
+    /* Punto de enfoque al centro */
+    .main-slider .slide .image-layer {
+        background-position: center center !important;
+    }
+
+    /* Un poco de aire lateral para el texto */
+    .main-slider .content {
+        padding: 0 5px;
+    }
+
+    /* Oscurecido suave para apreciar mejor la imagen */
+    .main-slider .slide .image-layer:before {
+        background-color: rgba(0, 0, 0, 0.25) !important;
+    }
+}
+
+/* ============================================
+   TARJETAS DE SERVICIO EN CELULAR
+   Evita que invadan la imagen del Hero
+   ============================================ */
+@media (max-width: 767px) {
+    .featured-area {
+        margin-top: 0 !important;    /* Quita el salto hacia arriba */
+        padding-top: 30px !important; /* Espacio normal debajo del Hero */
+    }
+}
