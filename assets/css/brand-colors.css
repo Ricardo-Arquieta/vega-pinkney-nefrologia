@@ -1425,37 +1425,63 @@ HERO VIDEO ICON – ONDAS BEIGE EN LUGAR DE AZUL
 }
 
 /* ============================================
-   HERO EN CELULAR - IMÁGENES CON MEJOR PROPORCIÓN
+   HERO EN CELULAR - TEXTO CENTRADO Y SIN EMPALME
    ============================================ */
 @media (max-width: 767px) {
-    /* Reducción del 40% en la altura para que la imagen se amplíe menos */
+    /* Espacio arriba para esquivar el header, poco abajo para no crecer */
     .main-slider.style1 .slide {
-        padding: 50px 0 45px !important;
+        padding: 130px 0 40px !important;
     }
 
-    /* Punto de enfoque al centro */
+    /* Punto de enfoque de la imagen */
     .main-slider .slide .image-layer {
         background-position: center center !important;
     }
 
-    /* Un poco de aire lateral para el texto */
-    .main-slider .content {
-        padding: 0 5px;
-    }
-
-    /* Oscurecido suave para apreciar mejor la imagen */
+    /* Oscurecido suave para apreciar la imagen */
     .main-slider .slide .image-layer:before {
         background-color: rgba(0, 0, 0, 0.25) !important;
     }
-}
 
-/* ============================================
-   TARJETAS DE SERVICIO EN CELULAR
-   Evita que invadan la imagen del Hero
-   ============================================ */
-@media (max-width: 767px) {
-    .featured-area {
-        margin-top: 0 !important;    /* Quita el salto hacia arriba */
-        padding-top: 30px !important; /* Espacio normal debajo del Hero */
+    /* Centrar todo el contenido */
+    .main-slider .content {
+        text-align: center !important;
+        padding: 0 15px !important;
+    }
+
+    /* Texto superior (//Enjoy Your Holiday//) más pequeño */
+    .main-slider .content h5 {
+        font-size: 13px !important;
+        line-height: 20px !important;
+    }
+
+    /* Título más pequeño */
+    .main-slider .content h2 {
+        font-size: 28px !important;
+        line-height: 1.2em !important;
+        margin-top: 12px !important;
+        margin-bottom: 25px !important;
+    }
+
+    /* Botones: uno debajo del otro, centrados */
+    .main-slider .content .btns-box {
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 10px !important;
+    }
+
+    /* Botones más compactos */
+    .main-slider .content .btns-box a {
+        margin: 0 !important;
+        font-size: 14px !important;
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+        line-height: 45px !important;
+    }
+
+    /* Quitar el margen del segundo botón para que quede centrado */
+    .main-slider .content .btns-box a.marleft {
+        margin-left: 0 !important;
     }
 }
