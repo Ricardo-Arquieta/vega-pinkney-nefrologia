@@ -1485,3 +1485,38 @@ HERO VIDEO ICON – ONDAS BEIGE EN LUGAR DE AZUL
         margin-left: 0 !important;
     }
 }
+
+/* ============================================
+   RECUADRO DE EXPERIENCIA EN CELULAR
+   Más pequeño y en la esquina inferior derecha
+   ============================================ */
+@media (max-width: 767px) {
+    .about-style1-area .about-experience-box {
+        top: auto !important;
+        bottom: 15px !important;
+        right: 15px !important;
+        width: 110px !important;
+        height: 110px !important;
+        border-radius: 18px !important;
+    }
+
+    .about-style1-area .about-experience-box .count-box {
+        padding: 20px 0 !important;
+    }
+
+    .about-style1-area .about-experience-box .count-box h2 {
+        font-size: 36px !important;
+        line-height: 36px !important;
+    }
+
+    .about-style1-area .about-experience-box .count-box h2 .plus-icon {
+        font-size: 12px !important;
+        margin-left: -6px !important;
+    }
+
+    .about-style1-area .about-experience-box .count-box h5 {
+        font-size: 11px !important;
+        line-height: 14px !important;
+        margin-top: 4px !important;
+    }
+}
