@@ -1623,3 +1623,41 @@ HERO VIDEO ICON – ONDAS BEIGE EN LUGAR DE AZUL
 .main-slider .btn-one:active .txt {
     color: #ffffff !important;
 }
+
+/* ============================================
+   CORREO EN BARRA LATERAL OCULTA - TIPOGRAFÍA REDUCIDA
+   ============================================ */
+.hidden-bar .contact-info-box ul li p a[href^="mailto"] {
+    font-size: 10px !important;
+    line-height: 1.5 !important;
+    white-space: normal !important;
+    word-break: break-all !important;
+    overflow-wrap: break-word !important;
+    display: inline-block !important;
+}
+
+/* ============================================
+   CORREO COMPLETO - SECCIÓN CONTACTO Y BARRA LATERAL
+   ============================================ */
+
+/* 1. Sección de contacto del cuerpo (junto al calendario) */
+/* Reduce el espacio del icono de 60px a 45px */
+.feautres-content-box .inner-content ul li .inner {
+    padding-left: 45px !important;
+}
+/* Permite que el correo se vea completo */
+.feautres-content-box .inner-content ul li .title p,
+.feautres-content-box .inner-content ul li .title p a {
+    font-size: 13px !important;
+    word-break: break-all !important;
+    overflow-wrap: break-word !important;
+}
+
+/* 2. Barra lateral oculta (los 9 puntos) */
+.hidden-bar .contact-info-box ul li p a[href^="mailto"] {
+    font-size: 11px !important;
+    white-space: normal !important;
+    word-break: break-all !important;
+    overflow-wrap: break-word !important;
+    display: inline-block !important;
+}
