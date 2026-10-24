@@ -1597,3 +1597,15 @@ HERO VIDEO ICON – ONDAS BEIGE EN LUGAR DE AZUL
 .main-slider .slide .image-layer:before {
     background-color: rgba(0, 0, 0, 0.35) !important;
 }
+
+
+/* ============================================
+   TARJETAS DE SERVICIO EN CELULAR
+   Evita que invadan la imagen del Hero
+   ============================================ */
+@media (max-width: 767px) {
+    .featured-area {
+        margin-top: 0 !important;
+        padding-top: 30px !important;
+    }
+}
