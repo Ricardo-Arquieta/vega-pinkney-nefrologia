@@ -1520,3 +1520,50 @@ HERO VIDEO ICON – ONDAS BEIGE EN LUGAR DE AZUL
         margin-top: 4px !important;
     }
 }
+
+/* ============================================
+   MENÚ MÓVIL - BARRA VERDE SOLO EN ACTIVA
+   ============================================ */
+@media (max-width: 767px) {
+    /* --- Opción activa: texto verde --- */
+    .mobile-menu .navigation li.current > a,
+    .mobile-menu .navigation li.current > a:hover {
+        color: #8FC424 !important;
+        background-color: transparent !important;
+        border-color: #8FC424 !important;
+        box-shadow: none !important;
+    }
+
+    /* --- Barra de la activa: verde por fondo, borde y sombra --- */
+    .mobile-menu .navigation li.current > a:before {
+        height: 100% !important;
+        background-color: #8FC424 !important;
+        background: #8FC424 !important;
+        border-color: #8FC424 !important;
+        box-shadow: none !important;
+    }
+
+    /* --- Hover en otras opciones: solo texto verde --- */
+    .mobile-menu .navigation li > a:hover,
+    .mobile-menu .navigation li > a:focus {
+        color: #8FC424 !important;
+    }
+
+    /* --- Opciones NO activas: sin barra de ningún tipo --- */
+    .mobile-menu .navigation li:not(.current) > a {
+        background-color: transparent !important;
+        border-color: transparent !important;
+        box-shadow: none !important;
+    }
+    .mobile-menu .navigation li:not(.current) > a:before {
+        height: 0 !important;
+        background: transparent !important;
+        border-color: transparent !important;
+        box-shadow: none !important;
+    }
+
+    /* --- Submenú (Blog) en hover: solo texto verde --- */
+    .mobile-menu .navigation li ul li > a:hover {
+        color: #8FC424 !important;
+    }
+}
