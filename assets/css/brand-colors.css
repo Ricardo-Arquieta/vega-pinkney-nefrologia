@@ -1609,3 +1609,17 @@ HERO VIDEO ICON – ONDAS BEIGE EN LUGAR DE AZUL
         padding-top: 30px !important;
     }
 }
+
+/* ============================================
+   BOTONES DEL HERO - TEXTO SIEMPRE EN BLANCO
+   ============================================ */
+.main-slider .btn-one,
+.main-slider .btn-one:hover,
+.main-slider .btn-one:focus,
+.main-slider .btn-one:active,
+.main-slider .btn-one .txt,
+.main-slider .btn-one:hover .txt,
+.main-slider .btn-one:focus .txt,
+.main-slider .btn-one:active .txt {
+    color: #ffffff !important;
+}
