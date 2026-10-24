@@ -1567,3 +1567,17 @@ HERO VIDEO ICON – ONDAS BEIGE EN LUGAR DE AZUL
         color: #8FC424 !important;
     }
 }
+
+/* ============================================
+   REDES SOCIALES DEL MENÚ MÓVIL - VERDE EN HOVER
+   Solo celulares
+   ============================================ */
+@media (max-width: 767px) {
+    .mobile-menu .social-links li a {
+        color: #ffffff !important;
+    }
+    .mobile-menu .social-links li a:hover,
+    .mobile-menu .social-links li a:focus {
+        color: #8FC424 !important;
+    }
+}
