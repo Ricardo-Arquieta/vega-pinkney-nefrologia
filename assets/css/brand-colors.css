@@ -1581,3 +1581,19 @@ HERO VIDEO ICON – ONDAS BEIGE EN LUGAR DE AZUL
         color: #8FC424 !important;
     }
 }
+
+/* ============================================
+   TEXTO SUPERIOR DEL HERO EN BLANCO
+   Aplica en celular, tablet y computadora
+   ============================================ */
+.main-slider .content h5,
+.main-slider .content h5 span {
+    color: #ffffff !important;
+}
+
+/* ============================================
+   OVERLAY DEL HERO - NEGRO 25% EN TODAS LAS PANTALLAS
+   ============================================ */
+.main-slider .slide .image-layer:before {
+    background-color: rgba(0, 0, 0, 0.35) !important;
+}
